@@ -43,6 +43,7 @@
 
 .cta__icon{
     background-color: var(--yellow--primary);
+    color: var(--black--primary);
     border-radius: 50%;
     padding: 0.5rem;
     box-sizing: content-box;
