@@ -1,11 +1,11 @@
-// import Image from 'next/image'
-import Hero from './_components/hero/page'
-import styles from './page.module.css'
+import HeroSection from './_components/hero/page';
+import AboutSection from './_components/about/page'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-        <Hero />
-    </main>
+    <div>
+        <HeroSection />
+        <AboutSection />
+    </div>
   )
 }

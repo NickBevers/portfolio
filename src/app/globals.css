@@ -4,6 +4,8 @@
     --blue--tertiary: hsl(191, 84%, 55%);
     --yellow--primary: hsl(43, 100%, 45%);
     --yellow--secondary: hsl(43, 80%, 65%);
+    --yellow--tertiary: hsl(43, 80%, 80%, 0.5);
+    --yellow--tertiary-alpha: hsl(43, 80%, 80%, 0);
     --white--primary: hsl(0, 0%, 100%);
     --white--secondary: hsl(0, 0%, 92%);
     --black--primary: hsl(0, 0%, 0%);
@@ -12,7 +14,10 @@
     --fontSize--h1: 6rem;
     --fontSize--h2: 3.75rem;
     --fontSize--h3: 3rem;
-    --fontSize--p: 1.25rem;
+    --fontSize--h4: 2.5rem;
+    --fontSize--p: 1.75rem;
+    --fontSize--subText: 1rem;
+    --fontSize--small: 0.75rem;
 
     --fontWeight--thin: 100;
     --fontWeight--extraLight: 200;
@@ -35,6 +40,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, p{
