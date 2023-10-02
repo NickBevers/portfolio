@@ -1,76 +1,28 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+:root{
+    --blue--primary: hsl(191, 84%, 14%);
+    --blue--secondary: hsl(191, 84%, 30%);
+    --blue--tertiary: hsl(191, 84%, 55%);
+    --yellow--primary: hsl(43, 100%, 45%);
+    --yellow--secondary: hsl(43, 80%, 65%);
+    --white--primary: hsl(0, 0%, 100%);
+    --white--secondary: hsl(0, 0%, 92%);
+    --black--primary: hsl(0, 0%, 0%);
+    --black--secondary: hsl(0, 0%, 8%);
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --fontSize--h1: 6rem;
+    --fontSize--h2: 3.75rem;
+    --fontSize--h3: 3rem;
+    --fontSize--p: 1.25rem;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+    --fontWeight--thin: 100;
+    --fontWeight--extraLight: 200;
+    --fontWeight--light: 300;
+    --fontWeight--regular: 400;
+    --fontWeight--medium: 500;
+    --fontWeight--semiBold: 600;
+    --fontWeight--bold: 700;
+    --fontWeight--extraBold: 800;
+    --fontWeight--black: 900;
 }
 
 * {
@@ -85,23 +37,27 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1, h2, h3, p{
+    color: var(--black--primary);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1{
+    font-size: var(--fontSize--h1);
+    font-weight: var(--fontWeight--bold);
+    letter-spacing: -1.5%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h2{
+    font-size: var(--fontSize--h2);
+    font-weight: var(--fontWeight--light);
+    letter-spacing: -0.5%;
+}
+
+h3{
+    font-size: var(--fontSize--h3);
+    font-weight: var(--fontWeight--regular);
+}
+
+.attention{
+    color: var(--yellow--primary);
 }

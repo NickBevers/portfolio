@@ -1,0 +1,53 @@
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--blue--primary);
+}
+
+.contact__title{
+    color: var(--white--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact__text{
+    font-size: var(--fontSize--h3);
+    color: var(--white--primary);
+    text-align: center;
+    width: 65.5rem;
+}
+
+.contact__textSmall{
+    font-size: var(--fontSize--p);
+    color: var(--white--primary);
+    text-align: center;
+}
+
+.socials__container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 4rem;
+    margin: 0 auto;
+}
+
+.socials__text{
+    font-size: var(--fontSize--p);
+    color: var(--white--primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact__link{
+    color: var(--yellow--primary);
+    text-decoration: underline;
+}
+
+.socials__link{
+    margin-bottom: 1rem;
+}
