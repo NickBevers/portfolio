@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 export default function aboutSection() {
     return (
-        <div className={styles.contactSection}>
+        <section className={styles.contactSection}>
             <h2 className={styles.about__title}>About</h2>
             <div className={styles.about__text}>
                 <p className={styles.description}>
@@ -17,6 +17,6 @@ export default function aboutSection() {
                     <FaArrowRightLong className={styles.cta__icon} />
                 </Link>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,5 +1,6 @@
 import styles from "./styles.module.css";
 import SocialLinks from "../_components/socialLinks/page";
+import Link from "next/link";
 
 export default function ContactPage() {
     return (
@@ -13,12 +14,12 @@ export default function ContactPage() {
                 to discuss your projects and start building on something big
                 <span className={styles.contact__textSmall}>{" "}(or small)</span>?
                 Great, you can{" "}
-                <a
+                <Link
                     className={styles.contact__link}
                     href="mailto:nick.bevers9@gmail.com"
                 >
                     click here
-                </a>{" "}
+                </Link>{" "}
                 to send me an e-mail.
             </p>
 

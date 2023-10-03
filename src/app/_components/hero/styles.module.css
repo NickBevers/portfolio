@@ -1,4 +1,4 @@
-.hero{
+.hero__container {
     height: 100vh;
     background-color: var(--blue--primary);
     display: flex;
