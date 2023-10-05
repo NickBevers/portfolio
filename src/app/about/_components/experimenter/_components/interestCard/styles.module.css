@@ -1,0 +1,38 @@
+.interestCard{
+    display: flex;
+    flex-direction: column;
+    /* width: calc(100% / 3 - 3rem); */
+    width: clamp(16rem, 100%, 25rem);
+    min-width: 16rem;
+    box-shadow: 0px 0px 1rem 0.2rem var(--blue--alpha);
+    text-decoration: none;
+}
+
+.interestCard__logo_container{
+    width: clamp(16rem, 100%, 25rem);
+    height: 16rem;
+    display: grid;
+    place-items: center;
+}
+
+.interestCard__logo{
+    width: clamp(8rem, 100%, 15rem);
+    height: auto;
+    max-height: 10rem;
+    object-fit: contain;
+}
+
+.interestCard__title{
+    font-size: var(--fontSize--h4);
+    font-weight: var(--fontWeight--regular);
+    padding: 1rem 0 1rem 1rem;
+    color: var(--black--primary);
+}
+
+.interestCard__description{
+    font-size: var(--fontSize--medium);
+    font-weight: var(--fontWeight--regular);
+    padding: 0 1rem 1rem 1rem;
+    color: var(--black--primary);
+    line-height: 1.25;
+}

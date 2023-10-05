@@ -1,6 +1,6 @@
 .developer__container {
     max-width: min(1920px, 100%);
-    margin: 0 auto 6rem auto;
+    margin: 0 auto;
     padding: 12rem 10.5rem 0 10.5rem;
     box-sizing: border-box;
     width: 100%;
@@ -51,7 +51,6 @@
     padding-bottom: 0.8rem;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scroll-behavior: smooth;
 }
 
 .strength__roulette::-webkit-scrollbar {

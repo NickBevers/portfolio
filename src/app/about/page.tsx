@@ -1,5 +1,8 @@
 import styles from "./styles.module.css";
 import Developer from "./_components/developer/page";
+import Teacher from "./_components/teacher/page";
+import Experimenter from './_components/experimenter/page';
+
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -16,16 +19,18 @@ export default function About() {
                     
                     <p className={styles.about__description}>I love to transform ideas into reality using a variety of technologies. Weaponed with knowledge, the internet and a ton of nerdy quirks, can I develop your project?</p>
                     
-                    <Link href={"/about"} className={styles.about__cta}>
-                        <p className={styles.about__cta_text}>Let&apos;s make this work!</p>
-                    <FaArrowRightLong className={styles.about__cta_icon} />
-                </Link>
+                    <Link href={"/contact"} className={styles.about__cta}>
+                            <p className={styles.about__cta_text}>Let&apos;s make this work!</p>
+                        <FaArrowRightLong className={styles.about__cta_icon} />
+                    </Link>
                 </div>
             </div>
 
             <Developer />
 
-            
+            <Teacher />
+
+            <Experimenter />
         </div>
     );
 }

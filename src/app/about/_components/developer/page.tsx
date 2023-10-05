@@ -67,7 +67,7 @@ export default function Developer() {
 
             <div className={styles.strength__container}>
                 <h5 className={styles.strength__title}>Strengths</h5>
-                <div className={styles.strength__roulette} id='strengths' onWheel={(e) => {handleScroll(e)}} onMouseEnter={()=>{toggleScroll('hidden')}} onMouseLeave={()=>{toggleScroll('auto')}} ref={ref}>
+                <div className={styles.strength__roulette}  id='strengths' onWheel={(e) => {handleScroll(e)}} onMouseEnter={()=>{toggleScroll('hidden')}} onMouseLeave={()=>{toggleScroll('auto')}} ref={ref}>
                     {strengths.map((strength, index) => {
                         return (
                             <div key={index} {...events} className={styles.strength__item}>
