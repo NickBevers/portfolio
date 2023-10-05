@@ -20,7 +20,7 @@
 }
 
 .footer__title{
-    font-size: var(--fontSize--p);
+    font-size: var(--fontSize--large);
     font-weight: var(--fontWeight--regular);
     margin-bottom: 1.875rem;
     color: var(--white--primary);
@@ -36,10 +36,23 @@
     color: var(--white--primary);
     font-size: var(--fontSize--medium);
     text-decoration: none;
+    position: relative;
 }
 
 .footer__navigationItem:hover{
     color: var(--yellow--secondary);
+}
+
+.footer__navigationItem_active::before{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--yellow--primary);
+    color: var(--yellow--primary);
 }
 
 .footer__contactFields{
@@ -87,11 +100,12 @@
 .divider{
     width: 90%;
     margin: 0 auto;
+    color: var(--white--secondary);
 }
 
 .copyright{
     margin: 1.875rem auto 0 auto;
-    padding-bottom: 3rem;
+    padding-bottom: 1.875rem;
     width: fit-content;
 }
 

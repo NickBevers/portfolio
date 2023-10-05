@@ -1,15 +1,32 @@
+'use client'
 import styles from './styles.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from "next/navigation";
 
 const iconSize: {width: number, height: number} = {width: 22, height: 20};
 const facebookIconSize: {width: number, height: number} = {width: 11, height: 20};
+
+const links = [
+    { href: "/", label: "Home" },
+    { href: "/projects", label: "Projects" },
+    { href: "/about", label: "About" },
+    { href: "/skills", label: "Skills" },
+    { href: "/contact", label: "Contact" },
+];
 
 const getCurrentYear = () => {
     return new Date().getFullYear();
 }
 
+function isActiveLink(href: string, pathName: string) {
+    return href === pathName
+        ? `${styles.footer__navigationItem} ${styles.footer__navigationItem_active}`
+        : `${styles.footer__navigationItem} `;
+}
+
 export default function Footer() {
+    const pathName = usePathname();
     return(
         <footer className={styles.footer__container}>
             <div className={styles.footer__content}>
@@ -18,11 +35,14 @@ export default function Footer() {
                 <div className={styles.footer__navigation}>
                     <p className={styles.footer__title}>Navigation</p>
                     <div className={styles.footer__navigationLinks}>
-                        <Link className={styles.footer__navigationItem} href={'/'}>Home</Link>
-                        <Link className={styles.footer__navigationItem} href={'/projects'}>Projects</Link>
-                        <Link className={styles.footer__navigationItem} href={'/about'}>About</Link>
-                        <Link className={styles.footer__navigationItem} href={'/skills'}>Skills</Link>
-                        <Link className={styles.footer__navigationItem} href={'/contact'}>Contact</Link>
+                        {links.map(({ href, label }) => (
+                            <Link
+                                key={`${href}${label}`}
+                                href={href}
+                                className={`${isActiveLink(href, pathName)}`}>
+                                {label}
+                            </Link>
+                        ))}
                     </div>
                 </div>
 
