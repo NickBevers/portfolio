@@ -24,6 +24,8 @@ export default function About() {
             </div>
 
             <Developer />
+
+            
         </div>
     );
 }
