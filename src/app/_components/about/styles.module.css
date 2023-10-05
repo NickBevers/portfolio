@@ -43,9 +43,12 @@
 
 .cta__icon{
     background-color: var(--yellow--primary);
+    font-size: 1.5rem;
     color: var(--black--primary);
     border-radius: 50%;
-    padding: 0.5rem;
+    width: 1.5rem;
+    height: 1.25rem;
+    padding: 0.875rem 0.75rem;
     box-sizing: content-box;
     transition: background-color 0.5s linear;
 }

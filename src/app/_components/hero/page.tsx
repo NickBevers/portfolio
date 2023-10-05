@@ -15,7 +15,7 @@ export default function HeroSection() {
     // }, [])
 
     return (
-        <div className={styles.hero}>
+        <section className={styles.hero__container}>
             {/* <h1 className={styles.title}>HeroSection</h1> */}
 
             <video autoPlay muted loop preload='auto' className={styles.video}>
@@ -31,6 +31,6 @@ export default function HeroSection() {
             <div className={styles.scrollDown} onClick={scrollDown}>
                 <p>Scroll to discover</p>
             </div>
-        </div>
+        </section>
     )
 }

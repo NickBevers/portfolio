@@ -1,0 +1,33 @@
+.developer__container{
+    max-width: min(1920px, 100%);
+    margin: 0 auto 6rem auto;
+    padding: 0 10.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.superScript{
+    vertical-align: super;
+    color: var(--black--primary);
+    font-size: var(--fontSize--large);
+    font-weight: var(--fontWeight--regular);
+    margin-left: -1rem;
+}
+
+.developer__description{
+    font-size: var(--fontSize--large);
+    font-weight: var(--fontWeight--regular);
+    color: var(--black--primary);
+    margin: 3rem 0;
+    line-height: 1.25;
+    width: 35ch;
+}
+
+.strength__image_container{
+    width: 250px;
+    height: 250px;
+}
+
+.divider{
+    color: var(--black--secondary);
+}
