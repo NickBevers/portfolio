@@ -1,49 +1,44 @@
-.about__container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.about__intro{
-    height: 100vh;
-    min-height: min(800px, 100vh);
-    background-color: var(--white--secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-}
-
-.about__introContent{
+.experimenter__container{
     max-width: min(1920px, 100%);
-    margin: 0 auto 9rem auto;
+    width: 100%;
+    margin: 3rem auto 0 auto;
     padding: 0 10.5rem;
-    box-sizing: border-box;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.about__title{
-    width: 100%;
+.experimenter__title{
+    font-size: var(--fontSize--h2);
+    text-align: left;
+    margin-bottom: 3rem;
 }
 
-.superScript{
+.experimenter__description{
+    font-size: var(--fontSize--large);
+    font-weight: var(--fontWeight--regular);
+    color: var(--black--primary);
+    line-height: 1.25;
+    width: 45ch;
+    margin-bottom: 6rem;
+}
+
+.superScript {
     vertical-align: super;
     color: var(--black--primary);
     font-size: var(--fontSize--large);
     font-weight: var(--fontWeight--regular);
-    margin-left: -1rem;
 }
 
-.about__description{
-    font-size: var(--fontSize--large);
-    font-weight: var(--fontWeight--regular);
-    color: var(--black--primary);
-    margin: 3rem 0;
-    line-height: 1.25;
-    width: 45ch;
+.experimenter__interest_container{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
-.about__cta{
+.cta_bottom{
     width: fit-content;
     display: flex;
     flex-direction: row;
@@ -51,9 +46,11 @@
     align-items: center;
     text-decoration: none;
     color: var(--black--primary);
+    align-self: flex-end;
+    margin-bottom: 6rem;
 }
 
-.about__cta_text{
+.cta_bottom_text{
     text-align: left;
     text-decoration: none;
     font-size: var(--fontSize--h4);
@@ -61,7 +58,7 @@
     transition: color 0.5s ease-in-out;
 }
 
-.about__cta_icon{
+.cta_bottom_icon{
     background-color: var(--yellow--primary);
     font-size: 1.5rem;
     color: var(--black--primary);
@@ -73,10 +70,10 @@
     transition: background-color 0.5s ease-in-out;
 }
 
-.about__cta:hover > .about__cta_icon{
+.cta_bottom:hover > .cta_bottom_icon{
     background-color: var(--yellow--secondary);
 }
 
-.about__cta:hover > .about__cta_text{
+.cta_bottom:hover > .cta_bottom_text{
     color: var(--blue--secondary);
 }

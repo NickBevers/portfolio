@@ -15,7 +15,7 @@
 }
 
 .about__text{
-    font-size: var(--fontSize--p);
+    font-size: var(--fontSize--large);
     text-align: left;
     min-width: 35rem;
 }

@@ -1,0 +1,74 @@
+{
+    "2023": [
+        {
+            "name": "Project 1",
+            "slug": "project-1",
+            "teaser": "This is a project",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
+            "thumbnail": "/images/projects/2023/project1/thumbnail.webp",
+            "images": [
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            ],
+            "link": "https://www.google.com",
+            "skills": ["skill1", "skill2", "skill3"],
+            "tags": ["tag1", "tag2", "tag3"],
+            "client": "Client 1",
+            "date": "2023-01-01",
+            "collaborators": [
+                {
+                    "name": "Collaborator 1",
+                    "link": "https://www.google.com"
+                }
+            ]
+        },
+        {
+            "name": "Project 2",
+            "slug": "project-2",
+            "teaser": "This is a project",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
+            "thumbnail": "/images/projects/2023/project2/thumbnail.webp",
+            "images": [
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            ],
+            "link": "https://www.google.com",
+            "skills": ["skill1", "skill2", "skill3"],
+            "tags": ["tag1", "tag2", "tag3"],
+            "client": "Client 1",
+            "date": "2023-01-01",
+            "collaborators": []
+        }
+    ],
+    "2022": [
+        {
+            "name": "Project 3",
+            "slug": "project-3",
+            "teaser": "This is a project",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
+            "thumbnail": "/images/projects/2023/project3/thumbnail.webp",
+            "images": [
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+                "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            ],
+            "link": "https://www.google.com",
+            "skills": ["skill1", "skill2", "skill3"],
+            "tags": ["tag1", "tag2", "tag3"],
+            "client": "Client 1",
+            "date": "2023-01-01",
+            "collaborators": [
+                {
+                    "name": "Collaborator 1",
+                    "link": "https://www.google.com"
+                },
+                {
+                    "name": "Collaborator 2",
+                    "link": "https://www.google.com"
+                }
+            ]
+        }
+    ]
+}

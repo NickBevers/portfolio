@@ -1,7 +1,6 @@
-import "./globals.css";
+import "/src/app/globals.css";
 import type { Metadata } from "next";
-import TTHoves from "./styles/fonts";
-
+import Navigation from "../_components/navigation/page";
 
 export const metadata: Metadata = {
     title: "Nick Bevers",
@@ -14,10 +13,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
-            <body className={TTHoves.className}>
-                {children}
-            </body>
-        </html>
+        <div>
+            <Navigation style="reverse"/>
+            <main>{children}</main>
+        </div>
     );
 }

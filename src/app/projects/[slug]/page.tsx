@@ -1,3 +1,3 @@
 export default function Page({ params }: { params: { slug: string } }) {
-    return <div>Project - {params.slug}</div>;
+    return <div style={{marginTop: '10rem'}}>Project - {params.slug}</div>;
 }

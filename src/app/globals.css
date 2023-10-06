@@ -2,21 +2,23 @@
     --blue--primary: hsl(191, 84%, 14%);
     --blue--secondary: hsl(191, 84%, 30%);
     --blue--tertiary: hsl(191, 84%, 55%);
+    --blue--alpha: hsl(191, 84%, 14%, 0.1);
     --yellow--primary: hsl(43, 100%, 45%);
     --yellow--secondary: hsl(43, 80%, 65%);
     --yellow--tertiary: hsl(43, 80%, 80%, 0.5);
     --yellow--tertiary-alpha: hsl(43, 80%, 80%, 0);
     --white--primary: hsl(0, 0%, 100%);
-    --white--secondary: hsl(0, 0%, 92%);
+    --white--secondary: hsl(0, 0%, 96%);
     --black--primary: hsl(0, 0%, 0%);
     --black--secondary: hsl(0, 0%, 8%);
+    --black--semiTransparent: hsl(0, 0%, 8%, 20%);
 
     --fontSize--h1: 6rem;
     --fontSize--h2: 3.75rem;
     --fontSize--h3: 3rem;
     --fontSize--h4: 2.5rem;
     --fontSize--h5: 2rem;
-    --fontSize--p: 1.75rem;
+    --fontSize--large: 1.5rem;
     --fontSize--medium: 1.25rem;
     --fontSize--subText: 1rem;
     --fontSize--small: 0.75rem;
@@ -68,4 +70,11 @@ h3{
 
 .attention{
     color: var(--yellow--primary);
+}
+
+@font-face {
+    font-family: 'TTHoves-Light';
+    src: url('./fonts/TTHoves-Light.woff2') format('woff2'),
+        url('./fonts/TTHoves-Light.woff') format('woff');
+    font-weight: var(--fontWeight--light);
 }

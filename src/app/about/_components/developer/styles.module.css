@@ -1,33 +1,107 @@
-.developer__container{
+.developer__container {
     max-width: min(1920px, 100%);
-    margin: 0 auto 6rem auto;
-    padding: 0 10.5rem;
+    margin: 0 auto;
+    padding: 12rem 10.5rem 0 10.5rem;
     box-sizing: border-box;
     width: 100%;
 }
 
-.superScript{
+.developer__title {
+    font-size: var(--fontSize--h2);
+    text-align: left;
+}
+
+.superScript {
     vertical-align: super;
     color: var(--black--primary);
     font-size: var(--fontSize--large);
     font-weight: var(--fontWeight--regular);
-    margin-left: -1rem;
 }
 
-.developer__description{
+.developer__description {
     font-size: var(--fontSize--large);
     font-weight: var(--fontWeight--regular);
     color: var(--black--primary);
-    margin: 3rem 0;
+    margin: 3rem 0 6rem 0;
     line-height: 1.25;
-    width: 35ch;
+    width: 45ch;
 }
 
-.strength__image_container{
-    width: 250px;
-    height: 250px;
+.strength__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem 0;
 }
+
+.strength__title {
+    font-size: var(--fontSize--h5);
+    font-weight: var(--fontWeight--regular);
+    color: var(--black--primary);
+    margin-bottom: 1rem;
+}
+
+.strength__roulette {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 0.8rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.strength__roulette::-webkit-scrollbar {
+    display: none;
+}
+
+.strength__item{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.strength__image{
+    width: 100%;
+    height: auto;
+}
+
+.strength__image_container {
+    width: 22rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.strength__image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(0.3rem);
+}
+
+.strength__image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--black--secondary);
+    opacity: 0.3;
+}
+
+.strength__name{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--white--primary);
+    font-weight: var(--fontWeight--regular);
+    font-size: var(--fontSize--medium);
+}
+
 
 .divider{
-    color: var(--black--secondary);
+    color: var(--black--semiTransparent);
 }

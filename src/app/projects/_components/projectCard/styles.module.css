@@ -1,0 +1,33 @@
+.projectCard{
+    width: clamp(20rem, 100%, 30rem);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.projectCard__thumbnail{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.projectCard__textContent{
+    width: 100%;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.projectCard__title{
+    font-size: var(--fontSize--h5);
+    margin-bottom: 0.5rem;
+}
+
+.projectCard__description{
+    font-size: var(--fontSize--medium);
+}
+
+.projectCard:hover > .projectCard__thumbnail{
+    filter: none;
+}
