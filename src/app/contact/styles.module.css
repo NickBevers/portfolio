@@ -1,17 +1,18 @@
 .contact__container{
     display: flex;
     flex-direction: column;
+    justify-content: 40%;
     align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 100vw;
+    padding: 7.5rem 0;
     background-color: var(--blue--primary);
 }
 
 .contact__title{
     color: var(--white--primary);
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 6rem 0 3rem 0;
 }
 
 .contact__text{
@@ -22,7 +23,7 @@
 }
 
 .contact__textSmall{
-    font-size: var(--fontSize--p);
+    font-size: var(--fontSize--large);
     color: var(--white--primary);
     text-align: center;
 }
@@ -37,7 +38,7 @@
 }
 
 .socials__text{
-    font-size: var(--fontSize--p);
+    font-size: var(--fontSize--large);
     color: var(--white--primary);
     text-align: center;
     margin-bottom: 1.5rem;
