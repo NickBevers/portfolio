@@ -30,7 +30,7 @@ function getStyle(style: string = '') {
     }
 }
 
-export default function Navigation({ style }: { style?: string} = { style: ''}) {
+export default function Navigation({ style }: { style: string} = { style: ''}) {
     const pathName = usePathname();
 
     return (

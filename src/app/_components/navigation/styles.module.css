@@ -28,9 +28,9 @@
 
 .navigation__brand{
     text-decoration: none;
-    font-size: var(--fontSize--large);
-    font-weight: var(--fontWeight--regular);
-    color: var(--blue--primary);
+    font-size: var(--fontSize--h5);
+    font-weight: var(--fontWeight--semiBold);
+    color: var(--blue--secondary);
     text-transform: capitalize;
 }
 
