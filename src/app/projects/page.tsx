@@ -1,22 +1,17 @@
 'use client'
 import styles from "./styles.module.css";
 import projectsJson from "../../assets/projects.json";
-// import * as Accordion from '@radix-ui/react-accordion';
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
 import ProjectCard from "./_components/projectCard/page";
-// import { BsChevronDown } from "react-icons/bs";
-// import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 interface ProjectsType{
     [key: string]: Array<{
         [key: string]: string | Array<string> | Array<{[key: string]: string}>
-        // [key: string]: any
     }>
 }
 
 const projects: ProjectsType = projectsJson;
 const projectYears: Array<string> = Object.keys(projects).reverse();
-
 
 export default function Projects() {
     return (

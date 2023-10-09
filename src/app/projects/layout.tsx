@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
     return (
         <div>
-            <Navigation />
+            <Navigation style={''}/>
             <main>{children}</main>
             <Footer />
         </div>
