@@ -10,6 +10,7 @@
     padding: 4.25rem 10.5rem 2rem 10.5rem;
     max-width: min(1920px, 100%);
     gap: max(9.125rem, 15%);
+    margin: 0 auto;
 }
 
 .footer__brand{
