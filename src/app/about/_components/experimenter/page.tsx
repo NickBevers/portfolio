@@ -3,7 +3,7 @@ import InterestCard from './_components/interestCard/page';
 import Link from 'next/link';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
-const interests: Array<{name: string, description: string, logo: string, link: string}> = [
+const interests = [
     {
         name: 'PayloadCMS',
         description: 'A headless CMS built on the React framework.',
@@ -32,7 +32,7 @@ export default function Experimenter() {
 
             <div className={styles.experimenter__interest_container}>
                 {interests.map((interest, index) => {
-                    return <InterestCard {...interest} key={index}/>
+                    return <InterestCard interestData={interest} key={index}/>
                 })}
             </div>
 

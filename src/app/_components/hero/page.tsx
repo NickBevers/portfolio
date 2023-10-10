@@ -25,6 +25,7 @@ export default function HeroSection() {
             <div className={styles.overlay}></div>
 
             
+            {/* TODO: fill with content */}
             <h1 className={styles.heroText}>HERO</h1>
 
 

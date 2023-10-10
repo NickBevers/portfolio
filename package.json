@@ -13,7 +13,7 @@
     "@types/three": "^0.156.0",
     "embla-carousel-autoplay": "^8.0.0-rc14",
     "embla-carousel-react": "^8.0.0-rc14",
-    "next": "latest",
+    "next": "^13.5.4",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
