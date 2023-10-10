@@ -4,17 +4,17 @@
     height: fit-content;
     position: relative;
     margin-bottom: 6rem;
+    /* overflow-x: hidden; */
 }
 
 .project__carousel{
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     gap: 2rem;
+    padding-right: 2rem;
 }
 
 .project__carousel_imageContainer{
@@ -24,32 +24,48 @@
     flex: 0 0 30%;
 }
 
+.project__carousel_imageContainer:first-of-type{
+    margin-left: 2rem;
+}
+
+
 .project__carousel_image{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.9;
 }
+
 
 .carousel__controls{
     width: 100%;
     height: fit-content;
     position: absolute;
-    bottom: 50%;
+    bottom: calc(50% - 1.25rem);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    z-index: 4;
 }
 
 .carousel__control_left, .carousel__control_right{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: var(--yellow--tertiary-alpha);
     border-radius: 50%;
+    background-color: var(--yellow--primary);
+    /* background-color: var(--white--semiTransoarent); */
+    padding: 0.5rem;
+    color: var(--blue--primary);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.carousel__control_left:hover, .carousel__control_right:hover{
+    background-color: var(--yellow--secondary);
 }

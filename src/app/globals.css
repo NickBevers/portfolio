@@ -9,6 +9,7 @@
     --yellow--tertiary-alpha: hsl(43, 80%, 80%, 0);
     --white--primary: hsl(0, 0%, 100%);
     --white--secondary: hsl(0, 0%, 96%);
+    --white--semiTransoarent: hsl(0, 0%, 100%, 0.6);
     --black--primary: hsl(0, 0%, 0%);
     --black--secondary: hsl(0, 0%, 8%);
     --black--semiTransparent: hsl(0, 0%, 8%, 20%);

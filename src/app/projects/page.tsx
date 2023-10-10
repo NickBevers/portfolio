@@ -10,6 +10,7 @@ interface ProjectsType{
     }>
 }
 
+// @ts-ignore
 const projects: ProjectsType = projectsJson;
 const projectYears: Array<string> = Object.keys(projects).reverse();
 
