@@ -1,0 +1,48 @@
+.project__customerDetails{
+    width: 100%;
+    max-width: min(1920px, 100%);
+    margin: -6rem auto 0 auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 8.375rem;
+    box-sizing: border-box;
+    z-index: 5;
+    background-color: var(--white--primary);
+}
+
+.project__textContent{
+    width: clamp(200px, 100%, 900px);
+    padding-top: 1rem;
+}
+
+.project__purpose{
+    font-size: var(--fontSize--large);
+    font-weight: var(--fontWeight--regular);
+    color: var(--black--primary);
+}
+
+.project__customerDetail_container{
+    width: clamp(200px, 50%, 378px);
+    background-color: var(--blue--primary);
+    color: var(--white--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.project__customerDetail_title{
+    font-size: var(--fontSize--medium);
+    font-weight: var(--fontWeight--medium);
+    color: var(--white--primary);
+    margin-bottom: 0.5rem;
+}
+
+.project__customerName, .project__customerDate{
+    color: var(--white--primary);
+} 
