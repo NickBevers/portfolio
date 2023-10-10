@@ -18,6 +18,7 @@
             "skills": ["skill1", "skill2", "skill3"],
             "tags": ["tag1", "tag2", "tag3"],
             "client": "Client 1",
+            "purpose": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
             "date": "2023-01-01",
             "collaborators": [
                 {

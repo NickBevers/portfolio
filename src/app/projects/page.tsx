@@ -14,6 +14,8 @@ interface ProjectsType{
 const projects: ProjectsType = projectsJson;
 const projectYears: Array<string> = Object.keys(projects).reverse();
 
+// TODO: make accordion separate component
+
 export default function Projects() {
     return (
         <section className={styles.projects__container}>

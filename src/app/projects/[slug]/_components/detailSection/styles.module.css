@@ -1,15 +1,43 @@
 .project__details{
     width: 100%;
-    max-width: min(1920px, 100%);
+    max-width: min(1920px, 90%);
     margin: -6rem auto 0 auto;
     height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding: 6rem 8.375rem;
+    justify-content: space-between;
+    padding: 6rem 10.5rem;
     box-sizing: border-box;
     z-index: 5;
     background-color: var(--white--primary);
+    position: relative;
+}
+
+.project__breadcrumb_container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-top: -3.5rem;
+}
+
+.project__breadcrumb_container__item{
+    text-decoration: none;
+    color: var(--black--primary);
+}
+
+.project__breadcrumb__line{
+    width: 3rem;
+    height: 0.1rem;
+    background-color: var(--black--primary);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--black--primary);
 }
 
 .project__title{
@@ -20,11 +48,11 @@
 }
 
 .project__textContent{
-    width: 100%;
+    width: clamp(200px, 100%, 900px);
 }
 
 .project__skills{
-    width: clamp(200px, 50%, 400px);
+    width: clamp(200px, 50%, 378px);
     background-color: var(--yellow--primary);
     display: flex;
     flex-direction: column;
@@ -32,7 +60,6 @@
     align-items: flex-start;
     padding: 3rem;
     box-sizing: border-box;
-    margin-left: 9.5rem;
     gap: 1rem;
 }
 
