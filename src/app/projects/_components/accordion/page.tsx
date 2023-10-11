@@ -3,7 +3,6 @@ import styles from "./styles.module.css";
 import projectsJson from "../../../../assets/projects.json";
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
 import ProjectCard from "../../_components/projectCard/page";
-
 import { Project } from "@/types/types";
 
 interface ProjectsType {

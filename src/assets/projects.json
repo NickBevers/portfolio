@@ -32,14 +32,41 @@
             "slug": "project-2",
             "teaser": "This is a project",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "thumbnail": "/images/projects/2023/project1/thumbnail.webp",
-            "cover": "/images/projects/2023/project1/cover.webp",
+            "thumbnail": "/images/projects/2023/project2/thumbnail.webp",
+            "cover": "/images/projects/2023/project2/cover.webp",
             "images": [
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp"
+                "/images/projects/2023/project2/cover.webp",
+                "/images/projects/2023/project2/cover.webp",
+                "/images/projects/2023/project2/cover.webp",
+                "/images/projects/2023/project2/cover.webp",
+                "/images/projects/2023/project2/cover.webp"
+            ],
+            "link": "https://www.google.com",
+            "skills": ["skill1", "skill2", "skill3"],
+            "tags": ["tag1", "tag2", "tag3"],
+            "client": "Client 1",
+            "purpose": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
+            "date": "2023-01-01",
+            "collaborators": [
+                {
+                    "name": "Collaborator 1",
+                    "link": "https://www.google.com"
+                }
+            ]
+        },
+        {
+            "name": "Project 3",
+            "slug": "project-3",
+            "teaser": "This is a project",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
+            "thumbnail": "/images/projects/2023/project3/thumbnail.webp",
+            "cover": "/images/projects/2023/project3/cover.webp",
+            "images": [
+                "/images/projects/2023/project3/cover.webp",
+                "/images/projects/2023/project3/cover.webp",
+                "/images/projects/2023/project3/cover.webp",
+                "/images/projects/2023/project3/cover.webp",
+                "/images/projects/2023/project3/cover.webp"
             ],
             "link": "https://www.google.com",
             "skills": ["skill1", "skill2", "skill3"],
@@ -57,18 +84,18 @@
     ],
     "2022": [
         {
-            "name": "Project 3",
-            "slug": "project-3",
+            "name": "Project 4",
+            "slug": "project-4",
             "teaser": "This is a project",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "thumbnail": "/images/projects/2023/project1/thumbnail.webp",
-            "cover": "/images/projects/2023/project1/cover.webp",
+            "thumbnail": "/images/projects/2023/project4/thumbnail.webp",
+            "cover": "/images/projects/2023/project4/cover.webp",
             "images": [
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp"
+                "/images/projects/2023/project4/cover.webp",
+                "/images/projects/2023/project4/cover.webp",
+                "/images/projects/2023/project4/cover.webp",
+                "/images/projects/2023/project4/cover.webp",
+                "/images/projects/2023/project4/cover.webp"
             ],
             "link": "https://www.google.com",
             "skills": ["skill1", "skill2", "skill3"],

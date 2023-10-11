@@ -14,6 +14,13 @@
     transition: filter 0.3s ease-in-out;
 }
 
+.projectCard__bottom{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
 .projectCard__textContent{
     width: 100%;
     padding: 1rem 0.5rem 0 0.5rem;
@@ -26,6 +33,13 @@
 
 .projectCard__description{
     font-size: var(--fontSize--medium);
+}
+
+.projectCard__icon{
+    color: var(--blue--primary);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem 0.5rem 0 0;
 }
 
 .projectCard:hover > .projectCard__thumbnail{
