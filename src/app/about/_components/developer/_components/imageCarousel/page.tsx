@@ -11,14 +11,14 @@ export default function ImageCarousel({data}: {data: Array<{name: string, image:
         align: 'start',
         loop: true,
         dragFree: true
-    }, [Autoplay()]);
+    }, [Autoplay({delay: 2500, stopOnInteraction: true,})]);
 
-    const scrollPrev = useCallback(() => {    if (emblaApi) emblaApi.scrollPrev()  }, [emblaApi])
-    const scrollNext = useCallback(() => {    if (emblaApi) emblaApi.scrollNext()  }, [emblaApi])
+    const scrollPrev = useCallback(() => { if (emblaApi) emblaApi.scrollPrev() }, [emblaApi])
+    const scrollNext = useCallback(() => { if (emblaApi) emblaApi.scrollNext() }, [emblaApi])
 
     return (
         <section className={`${styles.strength__carousel_container} embla`}>
-            <div className={`embla__viewport`} ref={emblaRef}>
+            <div className={`${styles.embla__viewport} embla__viewport`} ref={emblaRef}>
                 <div className={`${styles.strength__carousel} embla__container`}>
                     {data.map((item, index) => (
                         <div className={`${styles.strength__carousel_imageContainer} embla__slide`} key={index} >
@@ -27,12 +27,11 @@ export default function ImageCarousel({data}: {data: Array<{name: string, image:
                         </div>
                     ))}
                 </div>
-
-                <div className={styles.carousel__controls}>
-                    <span onClick={scrollPrev} className={`${styles.carousel__control_left} embla__prev`}><FaArrowLeftLong /></span>
-                    <span onClick={scrollNext} className={`${styles.carousel__control_right} embla__next`}><FaArrowRightLong /></span>
-                </div>
             </div>
+                <div className={styles.carousel__controls}>
+                    <span onClick={scrollNext} className={`${styles.carousel__control_left} embla__prev`}><FaArrowLeftLong /></span>
+                    <span onClick={scrollPrev} className={`${styles.carousel__control_right} embla__next`}><FaArrowRightLong /></span>
+                </div>
         </section>
     );
 }

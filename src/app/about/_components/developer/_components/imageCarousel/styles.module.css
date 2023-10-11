@@ -1,14 +1,7 @@
-/* Image carousel */
 .strength__carousel_container{
     width: 100%;
     height: fit-content;
     position: relative;
-    margin-bottom: 6rem;
-    /* overflow-x: hidden; */
-}
-
-.embla__viewport{
-    overflow-x: hidden;
 }
 
 .strength__carousel{
@@ -27,6 +20,9 @@
     object-fit: cover;
     flex: 0 0 30%;
     position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .strength__carousel_imageContainer:first-of-type{
@@ -58,8 +54,13 @@
     font-size: var(--fontSize--medium);
 }
 
+.embla__viewport{
+    position: relative;
+    overflow-x: hidden;
+}
+
 .carousel__controls{
-    width: 100%;
+    width: 110%;
     height: fit-content;
     position: absolute;
     bottom: calc(50% - 1.25rem);
@@ -67,8 +68,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    margin: 0 -5%;
     z-index: 4;
+    overflow-x: visible;
 }
 
 .carousel__control_left, .carousel__control_right{
