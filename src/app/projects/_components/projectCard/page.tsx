@@ -1,15 +1,12 @@
 'use client'
-
 import Link from "next/link";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import { useProjectContext } from "@/context/globalState";
+import { Project } from "@/types/types";
 
-interface ProjectType{
-    [key: string]: string | Array<string> | Array<{[key: string]: string}>
-}
 
-export default function ProjectCard({project}: {project: ProjectType}) {
+export default function ProjectCard({project}: {project: Project}) {
     // @ts-ignore
     const [currentProject, setCurrentProject] = useProjectContext();
     return(
