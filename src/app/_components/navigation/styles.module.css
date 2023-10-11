@@ -15,6 +15,11 @@
     background-color: transparent;
 }
 
+.blurred{
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
+}
+
 .navigation__contentContainer{
     display: flex;
     justify-content: space-between;
@@ -35,6 +40,10 @@
 }
 
 .reverse .navigation__brand{
+    color: var(--white--primary);
+}
+
+.blurred .navigation__brand{
     color: var(--white--primary);
 }
 
@@ -76,5 +85,13 @@
 }
 
 .reverse .navigation__link:hover{
+    color: var(--yellow--secondary);
+}
+
+.blurred .navigation__link{
+    color: var(--white--primary);
+}
+
+.blurred .navigation__link:hover{
     color: var(--yellow--secondary);
 }

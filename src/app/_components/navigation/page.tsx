@@ -25,6 +25,8 @@ function getStyle(style: string = '') {
             return styles.reverse;
         case 'transparent':
             return styles.transparent;
+        case 'blurred':
+            return styles.blurred;
         default:
             return '';
     }
@@ -36,7 +38,7 @@ export default function Navigation({ style }: { style: string} = { style: ''}) {
     return (
         <nav className={`${styles.navigation} ${getStyle(style)}`}>
             <div className={styles.navigation__contentContainer}>
-                <p className={`${styles.navigation__brand} ${style}`}>Nick Bevers</p>
+                <Link href={'/'} className={`${styles.navigation__brand} ${style}`}>Nick Bevers</Link>
                 <div className={styles.navigation__links}>
                     {links.map(({ href, label }) => (
                         <Link
