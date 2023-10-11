@@ -91,9 +91,9 @@ export default function Footer() {
                         </div>
 
                         <div className={styles.footer__socialText}>
-                            <p className={styles.footer__socialTitle}>Github</p>
-                            <p className={styles.footer__socialTitle}>LinkedIn</p>
-                            <p className={styles.footer__socialTitle}>Facebook</p>
+                            <Link className={styles.footer__socialTitle} href={'https://github.com/NickBevers/'}><p>Github</p></Link>
+                            <Link className={styles.footer__socialTitle} href={'https://www.linkedin.com/in/nick-bevers-1642901b9/'}><p>LinkedIn</p></Link>
+                            <Link className={styles.footer__socialTitle} href={'https://www.facebook.com/nick.bevers.9/'}><p>Facebook</p></Link>
                         </div>
                     </div>
                 </div>

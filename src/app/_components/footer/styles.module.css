@@ -85,17 +85,21 @@
     margin-top: 0.2rem;
 }
 
+.footer__socialTitle{
+    font-size: var(--fontSize--medium);
+    text-decoration: none;
+}
+
+.footer__socialTitle > p{
+    color: var(--white--primary);
+}
+
 .footer__socialText{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 1rem;
-}
-
-.footer__socialText > p{
-    color: var(--white--primary);
-    font-size: var(--fontSize--medium);
 }
 
 .divider{
