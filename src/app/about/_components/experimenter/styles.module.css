@@ -50,7 +50,7 @@
     margin-bottom: 6rem;
 }
 
-.cta_bottom_text{
+.cta_bottom__text{
     text-align: left;
     text-decoration: none;
     font-size: var(--fontSize--h4);
@@ -58,7 +58,7 @@
     transition: color 0.5s ease-in-out;
 }
 
-.cta_bottom_icon{
+.cta_bottom__icon{
     background-color: var(--yellow--primary);
     font-size: 1.5rem;
     color: var(--black--primary);
@@ -70,10 +70,94 @@
     transition: background-color 0.5s ease-in-out;
 }
 
-.cta_bottom:hover > .cta_bottom_icon{
+.cta_bottom:hover > .cta_bottom__icon{
     background-color: var(--yellow--secondary);
 }
 
-.cta_bottom:hover > .cta_bottom_text{
+.cta_bottom:hover > .cta_bottom__text{
     color: var(--blue--secondary);
+}
+
+@media only screen and (max-width: 1400px){
+    
+}
+
+@media only screen and (max-width: 1200px){
+    .experimenter__interest_container{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .experimenter__container {
+        padding: 0 7.5rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .experimenter__description {
+        width: 100%;
+    }
+
+    .cta_bottom{
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .experimenter__container {
+        padding: 0 5rem;
+    }
+
+    .experimenter__interest_container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta_bottom__text{
+        font-size: var(--fontSize--h5);
+    }
+
+    .cta_bottom__icon{
+        width: 1.5rem;
+        height: 1.2rem;
+        padding: 0.65rem 0.5rem;
+    }
+
+    .cta_bottom{
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .experimenter__container{
+        padding: 0 2rem;
+    }
+
+    .experimenter__title{
+        font-size: var(--fontSize--h3);
+        margin-bottom: 0;
+    }
+
+    .experimenter__description{
+        font-size: var(--fontSize--medium);
+        margin-top: 2rem;
+    }
+    
+    .cta_bottom__text{
+        font-size: var(--fontSize--large);
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .experimenter__container{
+        padding: 0 1.5rem;
+    }
+    
+    .cta_bottom__icon{
+        width: 1.2rem;
+        height: 1rem;
+        padding: 0.5rem 0.4rem;
+    }
 }

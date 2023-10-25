@@ -38,8 +38,8 @@ export default function Experimenter() {
 
             <div className={styles.cta_bottom}>
                 <Link href={"/contact"} className={styles.cta_bottom}>
-                        <p className={styles.cta_bottom_text}>Let&apos;s make this work!</p>
-                    <FaArrowRightLong className={styles.cta_bottom_icon} />
+                        <p className={styles.cta_bottom__text}>Let&apos;s make this work!</p>
+                    <FaArrowRightLong className={styles.cta_bottom__icon} />
                 </Link>
             </div>
         </div>

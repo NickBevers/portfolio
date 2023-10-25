@@ -93,6 +93,14 @@
     }
 }
 
-/* .scrollDown:hover > .scrollingDown{
-    transform: translateY(100%);
-} */
+@media screen and (max-width: 1100px){
+    .scrollDown{
+        right: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .scrollDown{
+        right: 2.5rem;
+    }
+}

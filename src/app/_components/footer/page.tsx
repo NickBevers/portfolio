@@ -33,7 +33,7 @@ export default function Footer() {
                 <p className={styles.footer__brand}>Nick Bevers</p>
 
                 <div className={styles.footer__navigation}>
-                    <p className={styles.footer__title}>Navigation</p>
+                    <p className={`${styles.footer__title} ${styles.footer__title_navigation}`}>Navigation</p>
                     <div className={styles.footer__navigationLinks}>
                         {links.map(({ href, label }) => (
                             <Link
@@ -49,13 +49,13 @@ export default function Footer() {
                 <div className={styles.footer__contact}>
                     <p className={styles.footer__title}>Contact us</p>
                     <div className={styles.footer__contactFields}>
-                        <p>Email.<span className={styles.white}>hello@nickbevers.be</span></p>
-                        <p>Tel.<span className={styles.white}>+32 477 35 55 32</span></p>
+                        <p className={styles.footer__contactData}>Email. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>hello@nickbevers.be</span></p>
+                        <p className={styles.footer__contactData}>Tel. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>+32 477 35 55 32</span></p>
                     </div>
                 </div>
 
                 <div className={styles.footer__socials}>
-                    <p className={styles.footer__title}>Socials</p>
+                    <p className={`${styles.footer__title} ${styles.footer__title_socials}`}>Socials</p>
 
                     <div className={styles.footer__SocialContainer}>
                         <div className={styles.footer__socialItems}>

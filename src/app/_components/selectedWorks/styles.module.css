@@ -19,10 +19,10 @@
 .projectCards__container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     height: fit-content;
+    gap: 2rem;
 }
 
 .cta__container{
@@ -33,7 +33,7 @@
     align-items: center;
     text-decoration: none;
     margin-top: 3rem;
-    width: min(100%, 35rem);
+    width: clamp(20rem, 65%, 35rem);
 }
 
 .cta__text{
@@ -61,4 +61,72 @@
 
 .cta__container:hover > .cta__text{
     color: var(--blue--secondary);
+}
+
+@media only screen and (max-width: 1300px){
+    .project__container{
+        padding: 12.25rem 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .project__container{
+        padding: 10.5rem 5.5rem;
+        align-items: center;
+    }
+
+    .projectCards__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta__container{
+        align-self: center;
+        width: clamp(20rem, 80%, 30rem);
+    }
+
+    .cta__text{
+        font-size: var(--fontSize--h5);
+    }
+
+    .cta__icon{
+        width: 1rem;
+        height: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .project__container{
+        padding: 6rem 2.5rem;
+    }
+
+    .cta__container{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .project__container{
+        padding: 6rem 1.5rem;
+    }
+
+    .selectedWorks__title{
+        font-size: var(--fontSize--h3);
+    }
+
+    .cta__text{
+        font-size: var(--fontSize--large);
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .cta__text{
+        font-size: var(--fontSize--medium);
+    }
+
+    .cta__icon{
+        width: 1.2rem;
+        height: 1rem;
+        padding: 0.6rem 0.4rem;
+    }
 }

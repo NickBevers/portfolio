@@ -16,6 +16,7 @@
     --black--overlay: hsl(0, 0%, 8%, 50%);
 
     --fontSize--h1: 6rem;
+    --fontSize--h1_5: 4.5rem;
     --fontSize--h2: 3.75rem;
     --fontSize--h3: 3rem;
     --fontSize--h4: 2.5rem;
@@ -34,6 +35,21 @@
     --fontWeight--bold: 700;
     --fontWeight--extraBold: 800;
     --fontWeight--black: 900;
+
+    /* mobile */
+    --screen--xs: 320px;
+
+    /* foldable phone / small tablet */
+    --screen--sm: 576px;
+
+    /* tablet */
+    --screen--md: 750px;
+
+    /* Small laptop screens */
+    --screen--lg: 850px;
+
+    /* Laptop & desktop */
+    --screen--xl: 1100px;
 }
 
 * {

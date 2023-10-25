@@ -16,8 +16,7 @@
     "next": "^13.5.4",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0",
-    "react-use-draggable-scroll": "^0.4.7"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/node": "latest",

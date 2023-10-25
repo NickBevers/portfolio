@@ -1,7 +1,6 @@
 .contact__container{
     display: flex;
     flex-direction: column;
-    justify-content: 40%;
     align-items: center;
     height: 100vh;
     width: 100vw;
@@ -13,6 +12,10 @@
     color: var(--white--primary);
     text-align: center;
     margin: 6rem 0 3rem 0;
+}
+
+.break_mobile{
+    display: none;
 }
 
 .contact__text{
@@ -44,6 +47,10 @@
     margin-bottom: 1.5rem;
 }
 
+.socials__mobile{
+    display: inline-block;
+}
+
 .contact__link{
     color: var(--yellow--primary);
     text-decoration: underline;
@@ -51,4 +58,87 @@
 
 .socials__link{
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-height: 1024px){
+    .contact__title{
+        margin: 3rem 0;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .contact__title{
+        font-size: var(--fontSize--h1_5);
+    }
+
+    .contact__text{
+        font-size: var(--fontSize--h4);
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .contact__container{
+        padding: 7.5rem 5rem
+    }
+    
+    .contact__text{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .contact__container{
+        justify-content: center;
+    }
+
+    .contact__textContent{
+        margin-bottom: 6rem;
+    }
+    
+    .contact__title{
+        font-size: var(--fontSize--h2);
+    }
+
+    .contact__text{
+        font-size: var(--fontSize--h5);
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .socials__text{
+        font-size: var(--fontSize--medium);
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .contact__container{
+        padding: 7.5rem 2.5rem
+    }
+
+    .contact__title{
+        font-size: var(--fontSize--h3);
+    }
+
+    .contact__text{
+        font-size: var(--fontSize--large);
+        text-align: start;
+    }
+
+    .socials__mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .contact__container{
+        padding: 7.5rem 1.5rem
+    }
+
+    .contact__title{
+        font-size: var(--fontSize--h4);
+    }
+
+    /* .break_mobile{
+        display: block;
+    } */
 }

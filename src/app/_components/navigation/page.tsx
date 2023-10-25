@@ -2,6 +2,7 @@
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MdMenu } from "react-icons/md";
 
 const links = [
     { href: "/", label: "Home" },
@@ -10,8 +11,6 @@ const links = [
     // { href: "/skills", label: "Skills" },
     { href: "/contact", label: "Contact" },
 ];
-
-// const reverseLinks = ["/", "/skills", "/contact"];
 
 function isActiveLink(href: string, pathName: string) {
     return href === pathName
@@ -32,6 +31,17 @@ function getStyle(style: string = '') {
     }
 }
 
+const toggleMenu = () => {
+    const menu = document.querySelector(`.${styles.navigation}`);
+    const links = document.querySelector(`.${styles.navigation__links}`);
+    const body = document.body;
+    if (!menu || !links || !body) return;
+    menu.classList.toggle(`${styles.navigation_active}`);
+    links.classList.toggle(`${styles.navigation__links_active}`);
+    // body.classList.toggle(`${styles.noScroll}`);
+    body.classList.toggle(`noScroll`);
+}
+
 export default function Navigation({ style }: { style: string} = { style: ''}) {
     const pathName = usePathname();
 
@@ -39,6 +49,7 @@ export default function Navigation({ style }: { style: string} = { style: ''}) {
         <nav className={`${styles.navigation} ${getStyle(style)}`}>
             <div className={styles.navigation__contentContainer}>
                 <Link href={'/'} className={`${styles.navigation__brand} ${style}`}>Nick Bevers</Link>
+                <MdMenu id="menuIcon" className={styles.navigation__mobileIcon} onClick={() => {toggleMenu()}}/>
                 <div className={styles.navigation__links}>
                     {links.map(({ href, label }) => (
                         <Link
