@@ -7,7 +7,7 @@ export default function CustomerDetail({purpose, client, date}: {purpose: string
                 <p className={styles.project__purpose}>{purpose}</p>
             </div>
             <div className={styles.project__customerDetail_container}>
-                <div className={styles.project}>
+                <div className={styles.project__client}>
                     <p className={styles.project__customerDetail_title}>Client:</p>
                     <p className={styles.project__customerName}>{client}</p>
                 </div>

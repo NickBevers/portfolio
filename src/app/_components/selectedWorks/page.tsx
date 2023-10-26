@@ -15,7 +15,7 @@ export default function SelectedWorks() {
 
                 <div className={styles.projectCards__container}>
                     {projectToLoop.map((item) => (
-                        <ProjectCard key={item.name} project={item} />
+                        <ProjectCard key={item.name} project={item} extraClass={'homePage'}/>
                     ))}
                 </div>
 

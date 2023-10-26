@@ -46,8 +46,31 @@
     filter: none;
 }
 
+@media only screen and (max-width: 1920px){
+    .projectCard{
+        width: calc(50% - 2rem);
+    }
+}
+
 @media screen and (max-width: 1100px){
     .projectCard{
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .projectCard{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .projectCard__title{
+        font-size: var(--fontSize--xlarge);
+    }
+
+    .projectCard__description{
+        font-size: var(--fontSize--subText);
     }
 }

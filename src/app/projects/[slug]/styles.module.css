@@ -23,3 +23,33 @@
     bottom: 0;
     left: 0;
 }
+
+@media only screen and (max-width: 1700px){
+    .project__coverImage_container{
+        height: clamp(400px, 100vh, 600px);
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .project__coverImage_container{
+        height: clamp(300px, 100vh, 500px);
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .project__coverImage_container{
+        height: clamp(200px, 100vh, 400px);
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .project__coverImage_container{
+        height: clamp(150px, 100vh, 300px);
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .project__coverImage_container{
+        height: clamp(100px, 100vh, 200px);
+    }
+}

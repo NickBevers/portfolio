@@ -22,6 +22,7 @@ export default function ProjectAccordion() {
                     classNames={{
                         base: styles.projects__accordion_base,
                         title: styles.projects__accordion_title,
+                        heading: styles.projects__accordion_heading,
                         titleWrapper: styles.projects__accordion_titleWrapper,
                         content: styles.projects__accordion_content,
                         trigger: styles.projects__accordion_trigger,
@@ -31,7 +32,7 @@ export default function ProjectAccordion() {
                     
                     <div className={styles.projects__accordion_container}>
                         {projects[year].map((item) => (
-                            <ProjectCard key={item.name} project={item} />
+                            <ProjectCard key={item.name} project={item} extraClass=""/>
                         ))}
                     </div>
                 </AccordionItem>
