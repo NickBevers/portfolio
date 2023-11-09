@@ -1,9 +1,9 @@
 'use client';
-// import { useEffect } from 'react';
 import styles from './styles.module.css'
+// import Image from 'next/image';
 
 function scrollDown() {
-    window.scrollTo(0, 2000);
+    window.scrollTo(0, 800);
 }
 
 export default function HeroSection() {
@@ -26,7 +26,11 @@ export default function HeroSection() {
 
             
             {/* TODO: fill with content */}
-            <h1 className={styles.heroText}>HERO</h1>
+            <div className={styles.heroText}>
+                <h1 className={styles.hero__title}>Heya, I&apos;m Nick</h1>
+                <p className={styles.hero__description}>Your best friend for <br className={styles.mobileBreak}/> everything dev-related</p>
+            </div>
+            {/* <Image src={'/images/wave.webp'} alt='Waving hand'/> */}
 
 
             <div className={styles.scrollDown} onClick={scrollDown}>

@@ -23,7 +23,16 @@
 .heroText{
     position: absolute;
     opacity: 1;
+}
+
+.heroText > *{
     color: var(--white--primary);
+}
+
+.hero__description{
+    font-weight: var(--fontWeight--medium);
+    font-size: 2.1rem;
+    margin-top: 1rem;
 }
 
 .scrollDown{
@@ -61,6 +70,10 @@
 
 .scrollDown:hover > p{
     animation: scrollAnimation 1s ease-in-out;
+}
+
+.mobileBreak{
+    display: none;
 }
 
 @keyframes scrollAnimation{
@@ -102,5 +115,38 @@
 @media screen and (max-width: 850px){
     .scrollDown{
         right: 2.5rem;
+    }
+
+    .hero__title{
+        font-size: var(--fontSize--h2);
+    }
+
+    .hero__description{
+        font-size: var(--fontSize--xlarge);
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .hero__title{
+        font-size: var(--fontSize--h2);
+    }
+
+    .hero__description{
+        line-height: 1.5;
+    }
+
+    .mobileBreak{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .hero__title{
+        font-size: var(--fontSize--h3);
+    }
+
+    .hero__description{
+        font-size: var(--fontSize--large);
     }
 }
