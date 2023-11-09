@@ -38,7 +38,7 @@ export default function Developer() {
     return (
         <div className={styles.developer__container}>
             <h2 className={styles.developer__title}>Developer <span className={styles.superScript}>(1)</span></h2>
-            <p className={styles.developer__description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eget pellentesque in nisi. Consequat tristique id ut nulla pretium cras. Dolor mi nullam facilisis nunc sagittis bibendum volutpat.</p>
+            <p className={styles.developer__description}>As a developer, I love nothing more than to spend my days filled with doing what I do best. Make dreams a (digital) reality. I love creating clean and proper code and I&apos;m always open to learn something new.</p>
 
             <div className={styles.strength__container}>
                 <h5 className={styles.strength__title}>Strengths</h5>

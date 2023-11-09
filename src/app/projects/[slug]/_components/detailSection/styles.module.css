@@ -48,7 +48,7 @@
 }
 
 .project__textContent{
-    width: clamp(200px, 100%, 900px);
+    width: clamp(200px, 100%, 950px);
 }
 
 .project__skills{
@@ -81,6 +81,7 @@
     font-weight: var(--fontWeight--regular);
     color: var(--black--primary);
     margin-bottom: 2rem;
+    width: clamp(200px, 100%, 900px);
 }
 
 @media only screen and (max-width: 1920px){

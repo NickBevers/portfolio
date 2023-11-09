@@ -1,112 +1,151 @@
 {
     "2023": [
         {
-            "name": "Project 1",
-            "slug": "project-1",
-            "teaser": "This is a project",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "thumbnail": "/images/projects/2023/project1/thumbnail.webp",
-            "cover": "/images/projects/2023/project1/cover.webp",
+            "name": "My Portfolio",
+            "slug": "my-portfolio",
+            "teaser": "My personal portfolio",
+            "description": "A place for my own on the internet, somewhere I can really express myself and show what I'm capable of. That was what I wanted to create with this portfolio. A place that really feels like me.",
+            "thumbnail": "/images/projects/2023/portfolio/thumbnail.webp",
+            "cover": "/images/projects/2023/portfolio/cover.webp",
             "images": [
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp",
-                "/images/projects/2023/project1/cover.webp"
+                "/images/projects/2023/portfolio/1.webp",
+                "/images/projects/2023/portfolio/2.webp",
+                "/images/projects/2023/portfolio/3.webp",
+                "/images/projects/2023/portfolio/4.webp",
+                "/images/projects/2023/portfolio/5.webp"
             ],
-            "link": "https://www.google.com",
-            "skills": ["skill1", "skill2", "skill3"],
-            "tags": ["tag1", "tag2", "tag3"],
-            "client": "Client 1",
-            "purpose": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "date": "2023-01-01",
+            "link": "https://nickbevers.be",
+            "skills": ["React", "NextJS", "Typescript", "CSS"],
+            "tags": ["project", "portfolio"],
+            "client": "Nick Bevers",
+            "purpose": "The site you're on right now is my own space that will serve as proof of my capabilities. It's a place where people are free to discover me and a place for me as a developer to show what I've made.",
+            "date": "2023-11-07",
+            "collaborators": []
+        },
+        {
+            "name": "FSHN",
+            "slug": "fshn",
+            "teaser": "A new way of fitting clothes",
+            "description": "FSHN is a project where people are encouraged to try a new way of fitting clothes. By using body tracking and machine learning, images of the clothes you choose are projected onto your body.",
+            "thumbnail": "/images/projects/2023/fshn/thumbnail.webp",
+            "cover": "/images/projects/2023/fshn/cover.webp",
+            "images": [
+                "/images/projects/2023/fshn/1.webp",
+                "/images/projects/2023/fshn/2.webp",
+                "/images/projects/2023/fshn/3.webp",
+                "/images/projects/2023/fshn/4.webp",
+                "/images/projects/2023/fshn/5.webp"
+            ],
+            "link": "https://fshn.nickbevers.be",
+            "skills": ["Vue", "Typescript", "MongoDB", "Machine Learning"],
+            "tags": ["fshn", "fashion", "clothes", "vue", "machine learning", "typescript"],
+            "client": "Thomas More",
+            "purpose": "This project was my final as a student at the Thomas More university of applied sciences. It combined all the knowledge and more that I had learned there throug the years.",
+            "date": "2023-06-09",
             "collaborators": [
                 {
-                    "name": "Collaborator 1",
-                    "link": "https://www.google.com"
+                    "name": "Marie Serroyen",
+                    "link": "https://www.linkedin.com/in/marie-serroyen-6006691b9"
                 }
             ]
         },
         {
-            "name": "Project 2",
-            "slug": "project-2",
-            "teaser": "This is a project",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "thumbnail": "/images/projects/2023/project2/thumbnail.webp",
-            "cover": "/images/projects/2023/project2/cover.webp",
+            "name": "E-commerce platform",
+            "slug": "ecommerce-stage",
+            "teaser": "An e-commerce webshop",
+            "description": "This fully complete webshop with a PHP back-end and Vue front-end is a place where people can freely create items to sell and where all items can be bought. It's a fully complete webshop for everyone to use.",
+            "thumbnail": "/images/projects/2023/ecommerce/thumbnail.webp",
+            "cover": "/images/projects/2023/ecommerce/cover.webp",
             "images": [
-                "/images/projects/2023/project2/cover.webp",
-                "/images/projects/2023/project2/cover.webp",
-                "/images/projects/2023/project2/cover.webp",
-                "/images/projects/2023/project2/cover.webp",
-                "/images/projects/2023/project2/cover.webp"
+                "/images/projects/2023/ecommerce/1.webp",
+                "/images/projects/2023/ecommerce/2.webp",
+                "/images/projects/2023/ecommerce/3.webp",
+                "/images/projects/2023/ecommerce/4.webp",
+                "/images/projects/2023/ecommerce/5.webp"
             ],
-            "link": "https://www.google.com",
-            "skills": ["skill1", "skill2", "skill3"],
-            "tags": ["tag1", "tag2", "tag3"],
-            "client": "Client 1",
-            "purpose": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "date": "2023-01-01",
+            "link": "",
+            "skills": ["Vue", "Laravel", "Typescript", "MySQL"],
+            "tags": ["ecommerce", "e-commerce", "intern", "laravel", "php", "vue"],
+            "client": "Artcore Society",
+            "purpose": "This e-commerce webshop has been made as a project during my internship at Artcore Society. In just 10 weeks, I built it from scratch together with Ismaïl El Ghamri ",
+            "date": "2023-05-12",
             "collaborators": [
                 {
-                    "name": "Collaborator 1",
-                    "link": "https://www.google.com"
+                    "name": "Ismaïl El Ghamri",
+                    "link": "https://www.ismail.live/"
                 }
             ]
         },
         {
-            "name": "Project 3",
-            "slug": "project-3",
-            "teaser": "This is a project",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "thumbnail": "/images/projects/2023/project3/thumbnail.webp",
-            "cover": "/images/projects/2023/project3/cover.webp",
-            "images": [
-                "/images/projects/2023/project3/cover.webp",
-                "/images/projects/2023/project3/cover.webp",
-                "/images/projects/2023/project3/cover.webp",
-                "/images/projects/2023/project3/cover.webp",
-                "/images/projects/2023/project3/cover.webp"
+            "name": "Stikr website",
+            "slug": "stikr",
+            "teaser": "An alternative to the current one",
+            "description": "I created this website in the same style and with the same brand as my summer job's place. I used their branding and tried my best to come up with a slightly altered version of their website.",
+            "thumbnail": "/images/projects/2023/stikr/thumbnail.webp",
+            "cover": "/images/projects/2023/stikr/cover.webp",
+            "images": [ 
+                "/images/projects/2023/stikr/1.webp",
+                "/images/projects/2023/stikr/2.webp",
+                "/images/projects/2023/stikr/3.webp",
+                "/images/projects/2023/stikr/4.webp",
+                "/images/projects/2023/stikr/5.webp"
             ],
-            "link": "https://www.google.com",
-            "skills": ["skill1", "skill2", "skill3"],
-            "tags": ["tag1", "tag2", "tag3"],
-            "client": "Client 1",
-            "purpose": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "date": "2023-01-01",
-            "collaborators": [
-                {
-                    "name": "Collaborator 1",
-                    "link": "https://www.google.com"
-                }
-            ]
+            "link": "https://stikr.nickbevers.be/",
+            "skills": ["Nuxt", "Vue", "Typescript", "Design"],
+            "tags": ["stikr", "nuxt", "vue", "design", "website"],
+            "client": "Nick Bevers",
+            "purpose": "This project was made by me to try my hand at the Nuxt JS meta framework. It was my first project that utilized this, and as such it's more about the way of wrting code than it is about content and design.",
+            "date": "2023-10-02",
+            "collaborators": []
         }
     ],
     "2022": [
         {
-            "name": "Project 4",
-            "slug": "project-4",
-            "teaser": "This is a project",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "thumbnail": "/images/projects/2023/project4/thumbnail.webp",
-            "cover": "/images/projects/2023/project4/cover.webp",
+            "name": "Donuttello configurator",
+            "slug": "donuttello-configurator",
+            "teaser": "Create your own donut",
+            "description": "A place where people can create their own donut virtually and maybe even share it with others. That was the target goal for this application. A 3D vibe was added for a bigger 'wow' effect for the users.",
+            "thumbnail": "/images/projects/2022/donuttello/thumbnail.webp",
+            "cover": "/images/projects/2022/donuttello/cover.webp",
             "images": [
-                "/images/projects/2023/project4/cover.webp",
-                "/images/projects/2023/project4/cover.webp",
-                "/images/projects/2023/project4/cover.webp",
-                "/images/projects/2023/project4/cover.webp",
-                "/images/projects/2023/project4/cover.webp"
+                "/images/projects/2022/donuttello/1.webp",
+                "/images/projects/2022/donuttello/2.webp",
+                "/images/projects/2022/donuttello/3.webp",
+                "/images/projects/2022/donuttello/4.webp",
+                "/images/projects/2022/donuttello/5.webp"
+            ],
+            "link": "https://donuttello.nl/",
+            "skills": ["NodeJS", "Vue", "MongoDB", "THREE.js"],
+            "tags": ["nodejs", "vue", "mongodb", "threejs"],
+            "client": "Donuttello",
+            "purpose": "This project was offered to me by donuttello as part of one of my courses at school. They wanted a new way to let people interact with donuts and a new way of marketeering their brand and name.",
+            "date": "2022-12-08",
+            "collaborators": []
+        },
+        {
+            "name": "IMT",
+            "slug": "imt",
+            "teaser": "A web3 shopping experience",
+            "description": "IMT is a marketplace created with the intention of letting people buy & sell NFT’s. It’s based on the Ethereum blockchain and uses a combination of Laravel, templating an blockchain as a way to allow for all this to work.",
+            "thumbnail": "/images/projects/2022/imt/thumbnail.webp",
+            "cover": "/images/projects/2022/imt/cover.webp",
+            "images": [
+                "/images/projects/2022/imt/1.webp",
+                "/images/projects/2022/imt/2.webp",
+                "/images/projects/2022/imt/3.webp",
+                "/images/projects/2022/imt/4.webp",
+                "/images/projects/2022/imt/5.webp"
             ],
             "link": "https://www.google.com",
-            "skills": ["skill1", "skill2", "skill3"],
-            "tags": ["tag1", "tag2", "tag3"],
-            "client": "Client 1",
-            "purpose": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto et, esse autem maxime quaerat doloremque expedita deleniti rerum ea culpa assumenda vero. Sequi totam unde odit architecto quo alias ab!",
-            "date": "2023-01-01",
+            "skills": ["Ethereum", "Web3", "Laravel", "MySQL", "PHP"],
+            "tags": ["nodejs", "laravel", "php", "web3"],
+            "client": "Thomas More",
+            "purpose": "IMT was my first ever project where I used a blockchain as a way of transfering (imaginary) funds. This marketplace was my final project for one of my courses at Thomas More.",
+            "date": "2022-05-24",
             "collaborators": [
                 {
-                    "name": "Collaborator 1",
-                    "link": "https://www.google.com"
+                    "name": "Bailey Lievens",
+                    "link": ""
                 }
             ]
         }

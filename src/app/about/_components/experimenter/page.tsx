@@ -28,7 +28,7 @@ export default function Experimenter() {
     return (
         <div className={styles.experimenter__container}>
             <h2 className={styles.experimenter__title}>Experimenter <span className={styles.superScript}>(3)</span></h2>
-            <p className={styles.experimenter__description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eget pellentesque in nisi. Consequat tristique id ut nulla pretium cras. Dolor mi nullam facilisis nunc sagittis bibendum volutpat.</p>
+            <p className={styles.experimenter__description}>When I see something new, I immediately get the urge to experiment around and see how I can use it or implement it to make the most out of it. Everything can be used, but not everything is useful.</p>
 
             <div className={styles.experimenter__interest_container}>
                 {interests.map((interest, index) => {

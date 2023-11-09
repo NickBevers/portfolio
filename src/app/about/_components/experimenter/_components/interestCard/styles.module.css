@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     /* width: calc(100% / 3 - 3rem); */
-    width: clamp(14rem, 100%, 25rem);
+    width: clamp(14rem, 100%, 30rem);
     min-width: 14rem;
     box-shadow: 0px 0px 1rem 0.2rem var(--blue--alpha);
     text-decoration: none;
 }
 
 .interestCard__logo_container{
-    width: clamp(14rem, 100%, 25rem);
+    width: clamp(14rem, 100%, 35rem);
     height: 14rem;
     display: grid;
     place-items: center;
@@ -25,14 +25,17 @@
 .interestCard__title{
     font-size: var(--fontSize--h4);
     font-weight: var(--fontWeight--regular);
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
+    padding-right: 0;
     color: var(--black--primary);
 }
 
 .interestCard__description{
     font-size: var(--fontSize--medium);
     font-weight: var(--fontWeight--regular);
-    padding: 0 1rem 1rem 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 1rem;
     color: var(--black--primary);
     line-height: 1.25;
 }

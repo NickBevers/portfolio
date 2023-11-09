@@ -10,7 +10,7 @@ export default function Teacher() {
                 </div>
                 <div className={styles.teacher__textContent}>
                     <h2 className={styles.teacher__title}>Teacher <span className={styles.superScript}>(2)</span></h2>
-                    <p className={styles.teacher__description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eget pellentesque in nisi. Consequat tristique id ut nulla pretium cras. Dolor mi nullam facilisis nunc sagittis bibendum volutpat.</p>
+                    <p className={styles.teacher__description}>When I get the opportunity, I never pass up on having the pleasure of sharing my knowledge with others. Being able to help someone is something I thoroughly enjoy and I hope to continue that.</p>
                 </div>
             </div>
 

@@ -46,12 +46,12 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     background-color: var(--black--overlay);
     color: var(--white--primary);
     font-weight: var(--fontWeight--regular);
-    font-size: var(--fontSize--medium);
+    font-size: var(--fontSize--large);
 }
 
 .embla__viewport{
