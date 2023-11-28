@@ -18,7 +18,7 @@ export default function Project() {
                 <Image priority={true} className={styles.project__coverImage} src={currentProject.cover} alt={`${currentProject.title} - cover image`} width={0} height={0} sizes='100%' />
             </div>
 
-            <DetailSection name={currentProject.name} description={currentProject.description} skills={currentProject.skills} />
+            <DetailSection name={currentProject.name} description={currentProject.description} skills={currentProject.skills} link={currentProject.link} />
 
             <ImageCarousel name={currentProject.name} images={currentProject.images} />
 

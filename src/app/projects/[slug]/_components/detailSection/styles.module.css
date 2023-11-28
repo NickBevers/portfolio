@@ -24,6 +24,30 @@
     margin-top: -3.5rem;
 }
 
+.project__link__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 1.2rem;
+    background-color: var(--blue--primary);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.project__link{
+    text-decoration: none;
+    color: var(--white--primary);
+    font-weight: var(--fontWeight--regular);
+    font-size: var(--fontSize--medium);
+}
+
+.project__link__container:hover{
+    background-color: var(--blue--secondary);
+}
+
 .project__breadcrumb_container__item{
     text-decoration: none;
     color: var(--black--primary);

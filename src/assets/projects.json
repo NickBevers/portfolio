@@ -136,7 +136,7 @@
                 "/images/projects/2022/imt/4.webp",
                 "/images/projects/2022/imt/5.webp"
             ],
-            "link": "https://www.google.com",
+            "link": "",
             "skills": ["Ethereum", "Web3", "Laravel", "MySQL", "PHP"],
             "tags": ["nodejs", "laravel", "php", "web3"],
             "client": "Thomas More",
