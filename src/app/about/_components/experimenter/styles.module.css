@@ -1,163 +1,161 @@
-.experimenter__container{
-    max-width: min(1920px, 100%);
-    width: 100%;
-    margin: 3rem auto 0 auto;
-    padding: 0 10.5rem;
-    display: flex;
-    flex-direction: column;
+.experimenter__container {
+  max-width: min(1920px, 100%);
+  width: 100%;
+  margin: 3rem auto 0 auto;
+  padding: 0 10.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.experimenter__title{
-    font-size: var(--fontSize--h2);
-    text-align: left;
-    margin-bottom: 3rem;
+.experimenter__title {
+  font-size: var(--fontSize--h2);
+  text-align: left;
+  margin-bottom: 3rem;
 }
 
-.experimenter__description{
-    font-size: var(--fontSize--large);
-    font-weight: var(--fontWeight--regular);
-    color: var(--black--primary);
-    line-height: 1.25;
-    width: 45ch;
-    margin-bottom: 6rem;
+.experimenter__description {
+  font-size: var(--fontSize--large);
+  font-weight: var(--fontWeight--regular);
+  color: var(--black--primary);
+  line-height: 1.25;
+  width: 45ch;
+  margin-bottom: 6rem;
 }
 
 .superScript {
-    vertical-align: super;
-    color: var(--black--primary);
-    font-size: var(--fontSize--large);
-    font-weight: var(--fontWeight--regular);
+  vertical-align: super;
+  color: var(--black--primary);
+  font-size: var(--fontSize--large);
+  font-weight: var(--fontWeight--regular);
 }
 
-.experimenter__interest_container{
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    gap: 3rem;
-    margin-bottom: 3rem;
+.experimenter__interest_container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
-.cta_bottom{
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
-    text-decoration: none;
-    color: var(--black--primary);
-    align-self: flex-end;
-    margin-bottom: 6rem;
+.cta_bottom {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black--primary);
+  align-self: flex-end;
+  margin-bottom: 6rem;
 }
 
-.cta_bottom__text{
-    text-align: left;
-    text-decoration: none;
-    font-size: var(--fontSize--h4);
-    font-weight: var(--fontWeight--regular);
-    transition: color 0.5s ease-in-out;
+.cta_bottom__text {
+  text-align: left;
+  text-decoration: none;
+  font-size: var(--fontSize--h4);
+  font-weight: var(--fontWeight--regular);
+  transition: color 0.5s ease-in-out;
 }
 
-.cta_bottom__icon{
-    background-color: var(--yellow--primary);
-    font-size: 1.5rem;
-    color: var(--black--primary);
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.25rem;
-    padding: 0.875rem 0.75rem;
-    box-sizing: content-box;
-    transition: background-color 0.5s ease-in-out;
+.cta_bottom__icon {
+  background-color: var(--yellow--primary);
+  font-size: 1.5rem;
+  color: var(--black--primary);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.25rem;
+  padding: 0.875rem 0.75rem;
+  box-sizing: content-box;
+  transition: background-color 0.5s ease-in-out;
 }
 
-.cta_bottom:hover > .cta_bottom__icon{
-    background-color: var(--yellow--secondary);
+.cta_bottom:hover>.cta_bottom__icon {
+  background-color: var(--yellow--secondary);
 }
 
-.cta_bottom:hover > .cta_bottom__text{
-    color: var(--blue--secondary);
+.cta_bottom:hover>.cta_bottom__text {
+  color: var(--blue--secondary);
 }
 
-@media only screen and (max-width: 1400px){
-    
-}
+@media only screen and (max-width: 1400px) {}
 
-@media only screen and (max-width: 1200px){
-    .experimenter__interest_container{
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+@media only screen and (max-width: 1200px) {
+  .experimenter__interest_container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    .experimenter__container {
-        padding: 0 7.5rem;
-    }
+  .experimenter__container {
+    padding: 0 7.5rem;
+  }
 }
 
 @media only screen and (max-width: 950px) {
-    .experimenter__description {
-        width: 100%;
-    }
+  .experimenter__description {
+    width: 100%;
+  }
 
-    .cta_bottom{
-        margin-bottom: 3rem;
-    }
+  .cta_bottom {
+    margin-bottom: 3rem;
+  }
 }
 
 @media only screen and (max-width: 850px) {
-    .experimenter__container {
-        padding: 0 5rem;
-    }
+  .experimenter__container {
+    padding: 0 5rem;
+  }
 
-    .experimenter__interest_container{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .experimenter__interest_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .cta_bottom__text{
-        font-size: var(--fontSize--h5);
-    }
+  .cta_bottom__text {
+    font-size: var(--fontSize--h5);
+  }
 
-    .cta_bottom__icon{
-        width: 1.5rem;
-        height: 1.2rem;
-        padding: 0.65rem 0.5rem;
-    }
+  .cta_bottom__icon {
+    width: 1.5rem;
+    height: 1.2rem;
+    padding: 0.65rem 0.5rem;
+  }
 
-    .cta_bottom{
-        align-self: flex-start;
-    }
+  .cta_bottom {
+    align-self: flex-start;
+  }
 }
 
-@media screen and (max-width: 650px){
-    .experimenter__container{
-        padding: 0 2rem;
-    }
+@media screen and (max-width: 650px) {
+  .experimenter__container {
+    padding: 0 2rem;
+  }
 
-    .experimenter__title{
-        font-size: var(--fontSize--h3);
-        margin-bottom: 0;
-    }
+  .experimenter__title {
+    font-size: var(--fontSize--h3);
+    margin-bottom: 0;
+  }
 
-    .experimenter__description{
-        font-size: var(--fontSize--medium);
-        margin-top: 2rem;
-    }
-    
-    .cta_bottom__text{
-        font-size: var(--fontSize--large);
-    }
+  .experimenter__description {
+    font-size: var(--fontSize--medium);
+    margin-top: 2rem;
+  }
+
+  .cta_bottom__text {
+    font-size: var(--fontSize--large);
+  }
 }
 
-@media only screen and (max-width: 450px){
-    .experimenter__container{
-        padding: 0 1.5rem;
-    }
-    
-    .cta_bottom__icon{
-        width: 1.2rem;
-        height: 1rem;
-        padding: 0.5rem 0.4rem;
-    }
+@media only screen and (max-width: 450px) {
+  .experimenter__container {
+    padding: 0 1.5rem;
+  }
+
+  .cta_bottom__icon {
+    width: 1.2rem;
+    height: 1rem;
+    padding: 0.5rem 0.4rem;
+  }
 }

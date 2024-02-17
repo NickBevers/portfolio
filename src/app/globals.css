@@ -1,56 +1,56 @@
-:root{
-    --blue--primary: hsl(191, 84%, 14%);
-    --blue--secondary: hsl(191, 84%, 30%);
-    --blue--tertiary: hsl(191, 84%, 55%);
-    --blue--alpha: hsl(191, 84%, 14%, 0.1);
-    --yellow--primary: hsl(43, 100%, 45%);
-    --yellow--secondary: hsl(43, 80%, 65%);
-    --yellow--tertiary: hsl(43, 80%, 80%, 0.5);
-    --yellow--tertiary-alpha: hsl(43, 80%, 80%, 0);
-    --white--primary: hsl(0, 0%, 100%);
-    --white--secondary: hsl(0, 0%, 96%);
-    --white--semiTransparent: hsl(0, 0%, 100%, 0.6);
-    --black--primary: hsl(0, 0%, 0%);
-    --black--secondary: hsl(0, 0%, 8%);
-    --black--semiTransparent: hsl(0, 0%, 8%, 20%);
-    --black--overlay: hsl(0, 0%, 8%, 50%);
+:root {
+  --blue--primary: hsl(191, 84%, 14%);
+  --blue--secondary: hsl(191, 84%, 30%);
+  --blue--tertiary: hsl(191, 84%, 55%);
+  --blue--alpha: hsl(191, 84%, 14%, 0.1);
+  --yellow--primary: hsl(43, 100%, 45%);
+  --yellow--secondary: hsl(43, 80%, 65%);
+  --yellow--tertiary: hsl(43, 80%, 80%, 0.5);
+  --yellow--tertiary-alpha: hsl(43, 80%, 80%, 0);
+  --white--primary: hsl(0, 0%, 100%);
+  --white--secondary: hsl(0, 0%, 96%);
+  --white--semiTransparent: hsl(0, 0%, 100%, 0.6);
+  --black--primary: hsl(0, 0%, 0%);
+  --black--secondary: hsl(0, 0%, 8%);
+  --black--semiTransparent: hsl(0, 0%, 8%, 20%);
+  --black--overlay: hsl(0, 0%, 8%, 50%);
 
-    --fontSize--h1: 6rem;
-    --fontSize--h1_5: 4.5rem;
-    --fontSize--h2: 3.75rem;
-    --fontSize--h3: 3rem;
-    --fontSize--h4: 2.5rem;
-    --fontSize--h5: 2rem;
-    --fontSize--xlarge: 1.75rem;
-    --fontSize--large: 1.5rem;
-    --fontSize--medium: 1.25rem;
-    --fontSize--subText: 1rem;
-    --fontSize--small: 0.75rem;
+  --fontSize--h1: 6rem;
+  --fontSize--h1_5: 4.5rem;
+  --fontSize--h2: 3.75rem;
+  --fontSize--h3: 3rem;
+  --fontSize--h4: 2.5rem;
+  --fontSize--h5: 2rem;
+  --fontSize--xlarge: 1.75rem;
+  --fontSize--large: 1.5rem;
+  --fontSize--medium: 1.25rem;
+  --fontSize--subText: 1rem;
+  --fontSize--small: 0.75rem;
 
-    --fontWeight--thin: 100;
-    --fontWeight--extraLight: 200;
-    --fontWeight--light: 300;
-    --fontWeight--regular: 400;
-    --fontWeight--medium: 500;
-    --fontWeight--semiBold: 600;
-    --fontWeight--bold: 700;
-    --fontWeight--extraBold: 800;
-    --fontWeight--black: 900;
+  --fontWeight--thin: 100;
+  --fontWeight--extraLight: 200;
+  --fontWeight--light: 300;
+  --fontWeight--regular: 400;
+  --fontWeight--medium: 500;
+  --fontWeight--semiBold: 600;
+  --fontWeight--bold: 700;
+  --fontWeight--extraBold: 800;
+  --fontWeight--black: 900;
 
-    /* mobile */
-    --screen--xs: 320px;
+  /* mobile */
+  --screen--xs: 320px;
 
-    /* foldable phone / small tablet */
-    --screen--sm: 576px;
+  /* foldable phone / small tablet */
+  --screen--sm: 576px;
 
-    /* tablet */
-    --screen--md: 750px;
+  /* tablet */
+  --screen--md: 750px;
 
-    /* Small laptop screens */
-    --screen--lg: 850px;
+  /* Small laptop screens */
+  --screen--lg: 850px;
 
-    /* Laptop & desktop */
-    --screen--xl: 1100px;
+  /* Laptop & desktop */
+  --screen--xl: 1100px;
 }
 
 * {
@@ -61,39 +61,43 @@
 
 html,
 body {
+  width: 100vw;
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, p{
-    color: var(--black--primary);
+h1,
+h2,
+h3,
+p {
+  color: var(--black--primary);
 }
 
-h1{
-    font-size: var(--fontSize--h1);
-    font-weight: var(--fontWeight--bold);
-    letter-spacing: -1.5%;
+h1 {
+  font-size: var(--fontSize--h1);
+  font-weight: var(--fontWeight--bold);
+  letter-spacing: -1.5%;
 }
 
-h2{
-    font-size: var(--fontSize--h2);
-    font-weight: var(--fontWeight--light);
-    letter-spacing: -0.5%;
+h2 {
+  font-size: var(--fontSize--h2);
+  font-weight: var(--fontWeight--light);
+  letter-spacing: -0.5%;
 }
 
-h3{
-    font-size: var(--fontSize--h3);
-    font-weight: var(--fontWeight--regular);
+h3 {
+  font-size: var(--fontSize--h3);
+  font-weight: var(--fontWeight--regular);
 }
 
-.attention{
-    color: var(--yellow--primary);
+.attention {
+  color: var(--yellow--primary);
 }
 
 @font-face {
-    font-family: 'TTHoves-Light';
-    src: url('./fonts/TTHoves-Light.woff2') format('woff2'),
-        url('./fonts/TTHoves-Light.woff') format('woff');
-    font-weight: var(--fontWeight--light);
+  font-family: 'TTHoves-Light';
+  src: url('./fonts/TTHoves-Light.woff2') format('woff2'),
+    url('./fonts/TTHoves-Light.woff') format('woff');
+  font-weight: var(--fontWeight--light);
 }

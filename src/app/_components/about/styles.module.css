@@ -1,119 +1,119 @@
-.contactSection{
-    background-color: var(--white--primary);
-    padding: 12.25rem 10.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: min(1920px, 100%);
-    margin: 0 auto;
+.contactSection {
+  background-color: var(--white--primary);
+  padding: 12.25rem 10.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: min(1920px, 100%);
+  margin: 0 auto;
 }
 
-.about__title{
-    font-size: var(--fontSize--h2);
-    text-align: left;
+.about__title {
+  font-size: var(--fontSize--h2);
+  text-align: left;
 }
 
-.about__text{
-    font-size: var(--fontSize--large);
-    text-align: left;
-    width: clamp(20rem, 85%, 35rem);
+.about__text {
+  font-size: var(--fontSize--large);
+  text-align: left;
+  width: clamp(20rem, 85%, 35rem);
 }
 
-.description{
+.description {
+  margin-bottom: 2rem;
+  line-height: 1.25;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cta__text {
+  text-align: left;
+  text-decoration: none;
+  font-size: var(--fontSize--h4);
+  font-weight: var(--fontWeight--regular);
+  transition: color 0.5s linear;
+}
+
+.cta__icon {
+  background-color: var(--yellow--primary);
+  font-size: 1.5rem;
+  color: var(--black--primary);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.25rem;
+  padding: 0.875rem 0.75rem;
+  box-sizing: content-box;
+  transition: background-color 0.5s linear;
+}
+
+.cta__container:hover>.cta__icon {
+  background-color: var(--yellow--secondary);
+}
+
+.cta__container:hover>.cta__text {
+  color: var(--blue--secondary);
+}
+
+@media screen and (max-width: 1100px) {
+  .contactSection {
+    padding: 10.5rem 4.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contactSection {
+    padding: 6rem 2.5rem;
+    flex-direction: column;
+  }
+
+  .about__title {
+    margin-bottom: 4rem;
+  }
+
+  .cta__text {
+    font-size: var(--fontSize--h5);
+  }
+
+  .cta__icon {
+    width: 1rem;
+    height: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contactSection {
+    padding: 6rem 1.5rem;
+  }
+
+  .about__title {
     margin-bottom: 2rem;
-    line-height: 1.25;
+    font-size: var(--fontSize--h3);
+  }
+
+  .about__text {
+    font-size: var(--fontSize--medium);
+  }
+
+  .cta__text {
+    font-size: var(--fontSize--large);
+  }
 }
 
-.cta__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-}
+@media only screen and (max-width: 450px) {
+  .cta__text {
+    font-size: var(--fontSize--medium);
+  }
 
-.cta__text{
-    text-align: left;
-    text-decoration: none;
-    font-size: var(--fontSize--h4);
-    font-weight: var(--fontWeight--regular);
-    transition: color 0.5s linear;
-}
-
-.cta__icon{
-    background-color: var(--yellow--primary);
-    font-size: 1.5rem;
-    color: var(--black--primary);
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.25rem;
-    padding: 0.875rem 0.75rem;
-    box-sizing: content-box;
-    transition: background-color 0.5s linear;
-}
-
-.cta__container:hover > .cta__icon{
-    background-color: var(--yellow--secondary);
-}
-
-.cta__container:hover > .cta__text{
-    color: var(--blue--secondary);
-}
-
-@media screen and (max-width: 1100px){
-    .contactSection{
-        padding: 10.5rem 4.5rem;
-    }
-}
-
-@media screen and (max-width: 850px){
-    .contactSection{
-        padding: 6rem 2.5rem;
-        flex-direction: column;
-    }
-
-    .about__title{
-        margin-bottom: 4rem;
-    }
-
-    .cta__text{
-        font-size: var(--fontSize--h5);
-    }
-
-    .cta__icon{
-        width: 1rem;
-        height: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 650px){
-    .contactSection{
-        padding: 6rem 1.5rem;
-    }
-
-    .about__title{
-        margin-bottom: 2rem;
-        font-size: var(--fontSize--h3);
-    }
-
-    .about__text{
-        font-size: var(--fontSize--medium);
-    }
-
-    .cta__text{
-        font-size: var(--fontSize--large);
-    }
-}
-
-@media only screen and (max-width: 450px){
-    .cta__text{
-        font-size: var(--fontSize--medium);
-    }
-
-    .cta__icon{
-        width: 1.2rem;
-        height: 1rem;
-        padding: 0.6rem 0.4rem;
-    }
+  .cta__icon {
+    width: 1.2rem;
+    height: 1rem;
+    padding: 0.6rem 0.4rem;
+  }
 }

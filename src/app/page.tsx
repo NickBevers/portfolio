@@ -7,12 +7,12 @@ import Navigation from './_components/navigation/page';
 export default function Home() {
   return (
     <div>
-        <Navigation style={'blurred'}/>
-        <HeroSection />
-        <AboutSection />
-        <SelectedWorks />
+      <Navigation style={'blurred'} />
+      <HeroSection />
+      <AboutSection />
+      <SelectedWorks />
 
-        <Footer />
+      <Footer />
     </div>
   )
 }
