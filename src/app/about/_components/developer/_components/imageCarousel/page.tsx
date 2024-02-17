@@ -29,8 +29,8 @@ export default function ImageCarousel({ data }: { data: Array<{ name: string, im
         </div>
       </div>
       <div className={styles.carousel__controls}>
-        <span onClick={scrollNext} className={`${styles.carousel__control_left} embla__prev`}><FaArrowLeftLong /></span>
-        <span onClick={scrollPrev} className={`${styles.carousel__control_right} embla__next`}><FaArrowRightLong /></span>
+        <span onClick={scrollPrev} className={`${styles.carousel__control_left} embla__prev`}><FaArrowLeftLong /></span>
+        <span onClick={scrollNext} className={`${styles.carousel__control_right} embla__next`}><FaArrowRightLong /></span>
       </div>
     </section>
   );

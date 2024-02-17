@@ -189,6 +189,7 @@
 
   .footer__mobileBreak {
     display: block;
+    margin-bottom: 0.25rem;
   }
 
   .footer__contactField {

@@ -17,10 +17,10 @@ const interests = [
     link: 'https://bun.sh/'
   },
   {
-    name: 'NEXT.js',
-    description: 'A React framework for building web applications.',
-    logo: '/images/next.svg',
-    link: 'https://nextjs.org/'
+    name: 'Elysia',
+    description: 'An end-to-end framework for BunJS.',
+    logo: '/images/elysia.svg',
+    link: 'https://elysiajs.com/'
   },
 ];
 

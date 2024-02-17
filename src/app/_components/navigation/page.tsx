@@ -34,12 +34,9 @@ function getStyle(style: string = '') {
 const toggleMenu = () => {
   const menu = document.querySelector(`.${styles.navigation}`);
   const links = document.querySelector(`.${styles.navigation__links}`);
-  const body = document.body;
-  if (!menu || !links || !body) return;
+  if (!menu || !links) return;
   menu.classList.toggle(`${styles.navigation_active}`);
   links.classList.toggle(`${styles.navigation__links_active}`);
-  // body.classList.toggle(`${styles.noScroll}`);
-  body.classList.toggle(`noScroll`);
 }
 
 export default function Navigation({ style }: { style: string } = { style: '' }) {
