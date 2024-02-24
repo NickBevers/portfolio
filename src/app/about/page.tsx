@@ -4,6 +4,7 @@ import Mentor from "./_components/mentor/page";
 import Experimenter from './_components/experimenter/page';
 
 import Link from "next/link";
+import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function About() {
@@ -11,18 +12,19 @@ export default function About() {
     <div className={styles.about__container}>
       <div className={styles.about__intro}>
         <div className={styles.about__introContent}>
-          <h1 className={styles.about__title}>
-            Hey there, my <br className={`${styles.about__break} ${styles.break_first}`} />
-            name is <span style={{ color: 'var(--blue--secondary)' }}>Nick</span>, developer<span className={styles.superScript}>(1)</span>, <br className={styles.about__break} />
-            mentor<span className={styles.superScript}>(2)</span> and experimenter<span className={styles.superScript}>(3)</span>.
-          </h1>
-
-          <p className={styles.about__description}>I love to transform ideas into reality using a variety of technologies. Weaponed with knowledge, the internet and a ton of nerdy quirks, can I develop your project?</p>
-
-          <Link href={"/contact"} className={styles.about__cta}>
-            <p className={styles.about__cta__text}>Let&apos;s make this work!</p>
-            <FaArrowRightLong className={styles.about__cta__icon} />
-          </Link>
+          <div className={styles.about__introImage}>
+            <Image src="/images/nick.jpg" width={450} height={450} alt="Nick" className={styles.about__introImage} />
+          </div>
+          <div>
+            <h1 className={styles.about__title}>
+              Hey there,<br className={`${styles.about__break} ${styles.break_first}`} />  my name is <span style={{ color: 'var(--blue--secondary)' }}>Nick</span>
+            </h1>
+            <p className={styles.about__description}>I love to transform ideas into reality using a variety of technologies. Weaponed with knowledge, the internet and a ton of geeky quirks, Let&apos;s develop your project together!</p>
+            <Link href={"/contact"} className={styles.about__cta}>
+              <p className={styles.about__cta__text}>Let&apos;s make this work!</p>
+              <FaArrowRightLong className={styles.about__cta__icon} />
+            </Link>
+          </div>
         </div>
       </div>
 
