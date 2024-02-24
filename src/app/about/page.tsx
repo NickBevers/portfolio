@@ -28,9 +28,9 @@ export default function About() {
 
       <Developer />
 
-      <Teacher />
-
       <Experimenter />
+
+      <Teacher />
     </div>
   );
 }
