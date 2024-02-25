@@ -26,6 +26,8 @@ function getStyle(style: string = '') {
       return styles.transparent;
     case 'blurred':
       return styles.blurred;
+    case 'reverse transparent' || 'transparent reverse':
+      return `${styles.reverse} ${styles.transparent}`;
     default:
       return '';
   }

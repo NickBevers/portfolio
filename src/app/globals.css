@@ -10,6 +10,7 @@
   --white--primary: hsl(0, 0%, 100%);
   --white--secondary: hsl(0, 0%, 96%);
   --white--semiTransparent: hsl(0, 0%, 100%, 0.6);
+  --white--transparent: hsl(0, 0%, 100%, 0.25);
   --black--primary: hsl(0, 0%, 0%);
   --black--secondary: hsl(0, 0%, 8%);
   --black--semiTransparent: hsl(0, 0%, 8%, 20%);
@@ -83,10 +84,6 @@ h2 {
 h3 {
   font-size: var(--fontSize--h3);
   font-weight: var(--fontWeight--regular);
-}
-
-.attention {
-  color: var(--yellow--primary);
 }
 
 @font-face {

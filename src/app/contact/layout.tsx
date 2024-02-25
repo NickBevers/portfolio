@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <div>
-      <Navigation style="reverse" />
+      <Navigation style="reverse transparent" />
       <main>{children}</main>
     </div>
   );
