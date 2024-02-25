@@ -114,6 +114,26 @@
   animation: bubbleAnimation 6s infinite ease-in-out -1s;
 }
 
+@media only screen and (min-width: 1721px) {
+  .contact__title{
+    font-size: var(--fontSize--h1_5);
+  }
+
+  .contact__description{
+    font-size: var(--fontSize--xlarge);
+  }
+}
+
+@media only screen and (min-width: 1980px) {
+  .contact__title{
+    font-size: var(--fontSize--h1);
+  }
+
+  .contact__description{
+    font-size: var(--fontSize--h5);
+  }
+}
+
 @media only screen and (max-width: 1720px) {
   .bubbleTopRight {
     right: -8rem;
@@ -232,25 +252,30 @@
   }
 }
 
-@keyframes bubbleAnimation {
-  0% {
-    transform: translateY(0) translateX(0);
+@media only screen and (max-width: 500px) {
+  .bubbleMobile{
+    top: 35vh;
+    right: 3vw;
+    width: 250px;
+    height: 250px;
   }
-  25% {
-    transform: translateY(1rem) translateX(0.5rem);
+
+  .bubbleTopLeft {
+    top: -18rem;
+    left: -10rem;
   }
-  50% {
-    transform: translateY(-1rem) translateX(0.5rem);
+
+  .bubbleTopRight {
+    right: -10rem;
+    top: -15rem;
   }
-  75% {
-    transform: translateY(0.5rem) translateX(-1rem);
-  }
-  100% {
-    transform: translateY(0) translateX(0);
+
+  .bubbleSocials{
+    top: 15vh;
   }
 }
 
-@keyframes mainBubbleAnimation {
+@keyframes bubbleAnimation {
   0% {
     transform: translateY(0) translateX(0);
   }
