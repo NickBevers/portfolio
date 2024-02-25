@@ -10,11 +10,9 @@ export default function Mentor() {
         </div>
         <div className={styles.mentor__textContent}>
           <h2 className={styles.mentor__title}>Mentor <span className={styles.superScript}>(3)</span></h2>
-          <p className={styles.mentor__description}>When I get the opportunity, I never pass up on having the pleasure of sharing my knowledge with others. Being able to help someone is something I thoroughly enjoy and I hope to continue that.</p>
+          <p className={styles.mentor__description}>When I get the opportunity, I never pass up on having the pleasure of sharing my knowledge with others. Being able to help someone is something I thoroughly enjoy and I hope to continue that. A team grows fgaster with the support and knowledge of everyone involved after all.</p>
         </div>
       </div>
-
-      <hr className={styles.divider} />
     </div>
   );
 }
