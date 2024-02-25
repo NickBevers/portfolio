@@ -1,7 +1,5 @@
 import SocialLinks from "./_components/socialLinks/page";
 import styles from "./styles.module.css";
-// import SocialLinks from "./_components/socialLinks/page";
-// import Link from "next/link";
 import Image from 'next/image';
 
 export default function ContactPage() {
