@@ -30,7 +30,50 @@ export default function Footer() {
   return (
     <footer className={styles.footer__container}>
       <div className={styles.footer__content}>
-        <p className={styles.footer__brand}>Nick Bevers</p>
+        <div className={styles.footer__socials}>
+          <p className={styles.footer__brand}>Nick Bevers</p>
+          {/* <p className={`${styles.footer__title} ${styles.footer__title_socials}`}>Socials</p> */}
+
+          <div className={styles.footer__SocialContainer}>
+            <div className={styles.footer__socialItems}>
+              <a href="https://github.com/NickBevers/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  width={iconSize.width}
+                  height={iconSize.height}
+                  className={styles.socialLinks__icon}
+                  src="/images/github.svg"
+                  alt="Github"
+                />
+              </a>
+
+              <a href="https://www.linkedin.com/in/nick-bevers-1642901b9/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  width={iconSize.width}
+                  height={iconSize.height}
+                  className={styles.socialLinks__icon}
+                  src="/images/linkedin.svg"
+                  alt="LinkedIn"
+                />
+              </a>
+
+              <a href="https://www.facebook.com/nick.bevers.9/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  width={facebookIconSize.width}
+                  height={facebookIconSize.height}
+                  className={styles.socialLinks__icon}
+                  src="/images/facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+            </div>
+
+            <div className={styles.footer__socialText}>
+              <a className={styles.footer__socialTitle} target='_blank' rel='noopener noreferrer' href={'https://github.com/NickBevers/'}><p>Github</p></a>
+              <a className={styles.footer__socialTitle} target='_blank' rel='noopener noreferrer' href={'https://www.linkedin.com/in/nick-bevers-1642901b9/'}><p>LinkedIn</p></a>
+              <a className={styles.footer__socialTitle} target='_blank' rel='noopener noreferrer' href={'https://www.facebook.com/nick.bevers.9/'}><p>Facebook</p></a>
+            </div>
+          </div>
+        </div>
 
         <div className={styles.footer__navigation}>
           <p className={`${styles.footer__title} ${styles.footer__title_navigation}`}>Navigation</p>
@@ -47,54 +90,10 @@ export default function Footer() {
         </div>
 
         <div className={styles.footer__contact}>
-          <p className={styles.footer__title}>Contact us</p>
+          <p className={styles.footer__title}>Contact me</p>
           <div className={styles.footer__contactFields}>
             <p className={styles.footer__contactData}>Email. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>hello@nickbevers.be</span></p>
             <p className={styles.footer__contactData}>Tel. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>+32 477 35 55 32</span></p>
-          </div>
-        </div>
-
-        <div className={styles.footer__socials}>
-          <p className={`${styles.footer__title} ${styles.footer__title_socials}`}>Socials</p>
-
-          <div className={styles.footer__SocialContainer}>
-            <div className={styles.footer__socialItems}>
-              <Link href="https://github.com/NickBevers/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  width={iconSize.width}
-                  height={iconSize.height}
-                  className={styles.socialLinks__icon}
-                  src="/images/github.svg"
-                  alt="Github"
-                />
-              </Link>
-
-              <Link href="https://www.linkedin.com/in/nick-bevers-1642901b9/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  width={iconSize.width}
-                  height={iconSize.height}
-                  className={styles.socialLinks__icon}
-                  src="/images/linkedin.svg"
-                  alt="LinkedIn"
-                />
-              </Link>
-
-              <Link href="https://www.facebook.com/nick.bevers.9/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  width={facebookIconSize.width}
-                  height={facebookIconSize.height}
-                  className={styles.socialLinks__icon}
-                  src="/images/facebook.svg"
-                  alt="Facebook"
-                />
-              </Link>
-            </div>
-
-            <div className={styles.footer__socialText}>
-              <Link className={styles.footer__socialTitle} href={'https://github.com/NickBevers/'}><p>Github</p></Link>
-              <Link className={styles.footer__socialTitle} href={'https://www.linkedin.com/in/nick-bevers-1642901b9/'}><p>LinkedIn</p></Link>
-              <Link className={styles.footer__socialTitle} href={'https://www.facebook.com/nick.bevers.9/'}><p>Facebook</p></Link>
-            </div>
           </div>
         </div>
       </div>
