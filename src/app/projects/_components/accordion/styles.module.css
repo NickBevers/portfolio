@@ -52,7 +52,8 @@
   fill: var(--black--primary);
   transform: rotate(-90deg);
   transition: transform 0.3s ease-in-out;
-  align-self: center;
+  align-self: flex-end;
+  margin-bottom: 1.2rem;
 }
 
 .projects__accordion_indicator[data-open="true"] {

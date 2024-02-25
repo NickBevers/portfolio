@@ -5,7 +5,7 @@ import projects from '../../../assets/projects.json';
 import ProjectCard from '@/app/projects/_components/projectCard/page';
 
 // limit to 3 projects
-const projectToLoop = projects["2023"].slice(0, 3);
+const projectToLoop = [projects["2023"][0], projects["2023"][3],  projects["2022"][0]]
 
 export default function SelectedWorks() {
   return (

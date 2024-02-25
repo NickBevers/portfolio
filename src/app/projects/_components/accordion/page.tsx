@@ -14,7 +14,7 @@ const projectYears: string[] = Object.keys(projects).reverse();
 
 export default function ProjectAccordion() {
   return (
-    <Accordion className={styles.projects__accordion} selectionMode="multiple" defaultExpandedKeys={[projectYears[0] as string]}>
+    <Accordion className={styles.projects__accordion} selectionMode="multiple" defaultExpandedKeys={projectYears.map((py) => {return py})}>
       {projectYears.map((year) => (
         <AccordionItem
           key={year}

@@ -111,7 +111,7 @@
     {
       "name": "Stikr website",
       "slug": "stikr",
-      "teaser": "An alternative to the current one",
+      "teaser": "NuxtJS remake of the Stikr website",
       "description": "I created this website in the same style and with the same brand as my summer job's place. I used their branding and tried my best to come up with a slightly altered version of their website.",
       "thumbnail": "/images/projects/2023/stikr/thumbnail.webp",
       "cover": "/images/projects/2023/stikr/cover.webp",
