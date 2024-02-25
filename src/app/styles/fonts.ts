@@ -2,26 +2,7 @@ import localFont from 'next/font/local'
 
 const TTHoves = localFont({
   src: [
-    {
-      path: '../fonts/TTHoves-Thin.woff2',
-      weight: '100',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TTHoves-ThinItalic.woff2',
-      weight: '100',
-      style: 'italic'
-    },
-    {
-      path: '../fonts/TTHoves-ExtraLight.woff2',
-      weight: '200',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TTHoves-ExtraLightItalic.woff2',
-      weight: '200',
-      style: 'italic'
-    },
+    
     {
       path: '../fonts/TTHoves-Light.woff2',
       weight: '300',
@@ -70,26 +51,6 @@ const TTHoves = localFont({
     {
       path: '../fonts/TTHoves-BoldItalic.woff2',
       weight: '700',
-      style: 'italic'
-    },
-    {
-      path: '../fonts/TTHoves-ExtraBold.woff2',
-      weight: '800',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TTHoves-ExtraBoldItalic.woff2',
-      weight: '800',
-      style: 'italic'
-    },
-    {
-      path: '../fonts/TTHoves-Black.woff2',
-      weight: '900',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TTHoves-BlackItalic.woff2',
-      weight: '900',
       style: 'italic'
     }
   ]

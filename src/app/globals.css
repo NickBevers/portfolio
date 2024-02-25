@@ -27,15 +27,11 @@
   --fontSize--subText: 1rem;
   --fontSize--small: 0.75rem;
 
-  --fontWeight--thin: 100;
-  --fontWeight--extraLight: 200;
   --fontWeight--light: 300;
   --fontWeight--regular: 400;
   --fontWeight--medium: 500;
   --fontWeight--semiBold: 600;
   --fontWeight--bold: 700;
-  --fontWeight--extraBold: 800;
-  --fontWeight--black: 900;
 
   /* mobile */
   --screen--xs: 320px;
@@ -77,13 +73,11 @@ p {
 h1 {
   font-size: var(--fontSize--h1);
   font-weight: var(--fontWeight--bold);
-  letter-spacing: -1.5%;
 }
 
 h2 {
   font-size: var(--fontSize--h2);
   font-weight: var(--fontWeight--light);
-  letter-spacing: -0.5%;
 }
 
 h3 {
