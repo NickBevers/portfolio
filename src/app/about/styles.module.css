@@ -17,7 +17,7 @@
 
 .about__introImage {
   width: clamp(200px, 40vw, 450px);
-  height: auto;
+  height: fit-content;
   object-fit: cover;
   object-position: center;
   animation: border-animation 25s infinite;
@@ -101,6 +101,16 @@
   .about__title {
     font-size: var(--fontSize--h1_5);
   }
+
+  .about__description{
+    width: 35ch;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .about__introImage {
+    width: clamp(230px, 25vw, 350px);
+  }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -110,6 +120,14 @@
 
   .break_first {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .about__introImage{
+    position: absolute;
+    top: 45vh;
+    right: 8vw;
   }
 }
 
@@ -124,6 +142,17 @@
 
   .about__description {
     font-size: var(--fontSize--medium);
+  }
+
+  .about__introImage {
+    width: clamp(270px, 30vw, 300px);
+    top: 42vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about__introImage {
+    top: 18vh;
   }
 }
 
@@ -142,25 +171,30 @@
   }
 
   .about__intro {
-    justify-content: flex-start;
+    justify-content: flex-end;
     min-height: auto;
     height: auto;
+    min-height: 700px;
   }
 
   .about__introContent {
     margin-bottom: 0;
-    padding: 9rem 5rem;
+    padding: 6rem 5rem 3rem 5rem;
+  }
+
+  .about__introImage{
+    width: clamp(200px, 30vw, 250px);
+    top: 10vh;
   }
 }
 
 @media screen and (max-width: 650px) {
   .about__introContent {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 
   .about__title {
     font-size: var(--fontSize--h3);
-    margin-top: 6rem;
   }
 
   .about__description {
@@ -173,6 +207,12 @@
 
   .about__cta__text {
     font-size: var(--fontSize--large);
+  }
+
+  .about__introImage {
+    width: clamp(280px, 40vw, 300px);
+    left: calc(50% - 140px);
+    top: 12vh;
   }
 }
 
@@ -193,6 +233,14 @@
     width: 1.2rem;
     height: 0.8rem;
     padding: 0.6rem 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about__introImage {
+    width: clamp(200px, 40vw, 220px);
+    left: calc(50% - 100px);
+    top: 18vh;
   }
 }
 

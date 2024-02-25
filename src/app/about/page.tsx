@@ -12,7 +12,7 @@ export default function About() {
     <div className={styles.about__container}>
       <div className={styles.about__intro}>
         <div className={styles.about__introContent}>
-          <div className={styles.about__introImage}>
+          <div className={styles.about__introImageContainer}>
             <Image src="/images/nick.jpg" width={450} height={450} alt="Nick" className={styles.about__introImage} />
           </div>
           <div>
