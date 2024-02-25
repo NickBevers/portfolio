@@ -70,7 +70,6 @@
 
 .footer__contactField {
   color: var(--white--primary);
-  margin-left: 1rem;
 }
 
 .footer__SocialContainer {
@@ -86,16 +85,21 @@
   margin-top: 0.2rem;
 }
 
+.socialLinks__icon:hover{
+  color: var(--yellow--secondary);
+  filter: invert(75%) sepia(97%) saturate(367%) hue-rotate(331deg) brightness(280%) contrast(86%);
+}
+
 .footer__socialTitle {
   font-size: var(--fontSize--medium);
   text-decoration: none;
 }
 
-.footer__socialTitle>p {
+.footer__socialTitle > p {
   color: var(--white--primary);
 }
 
-.footer__socialTitle>p:hover {
+.footer__socialTitle > p:hover {
   color: var(--yellow--secondary);
 }
 
@@ -123,7 +127,7 @@
   color: var(--white--primary);
 }
 
-.footer__mobileBreak {
+.mobile{
   display: none;
 }
 
@@ -152,22 +156,27 @@
     width: 50%;
   }
 
-  .footer__navigation,
+  .footer__navigation{
+    width: 40%;
+  }
+
   .footer__contact {
-    width: 50%;
+    width: 60%;
   }
 
   .footer__socials {
     width: 100%;
     margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
   }
 
-  .footer__title_socials {
+  .footer__mobileBreak{
     display: none;
   }
 
   .footer__SocialContainer {
-    width: 100%;
+    width: fit-content;
     justify-content: center;
   }
 
@@ -177,8 +186,16 @@
     justify-content: center;
   }
 
+  .footer__socialItems > *:hover {
+    color: var(--yellow--secondary);
+  }
+
   .footer__socialText {
     display: none;
+  }
+
+  .footer__brand{
+    width: 200px;
   }
 }
 
@@ -192,9 +209,11 @@
     height: 100%;
   }
 
-  .footer__mobileBreak {
+  .mobile {
     display: block;
-    margin-bottom: 0.25rem;
+    color: var(--white--primary);
+    width: 75%;
+    margin: 0 auto 2rem auto;
   }
 
   .footer__contactField {
@@ -206,14 +225,16 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .footer__content {
     justify-content: center;
+    padding: 2rem 3.5rem;
   }
 
   .footer__brand {
     width: 100%;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   .footer__navigation,
@@ -221,17 +242,43 @@
     width: 100%;
   }
 
+  .footer__SocialContainer{
+    margin-bottom: 1rem;
+  }
+
   .footer__navigation {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .footer__navigationTitle{
+    margin-bottom: 1rem;
+  }
+
+  .footer__navigationLinks{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__navigationItem{
+    width: 45%;
+  }
+
   .footer__contactData {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .footer__contactField {
+    margin-left: 0.4rem;
   }
 
   .footer__socials {

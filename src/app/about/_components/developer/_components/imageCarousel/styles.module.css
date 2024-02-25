@@ -129,7 +129,7 @@
   }
 
   .carousel__controls {
-    width: 30%;
+    width: 8rem;
     bottom: 0.5rem;
     background-color: var(--white--primary);
     border-radius: 100vmax;

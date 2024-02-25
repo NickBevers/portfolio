@@ -73,10 +73,11 @@ export default function Footer() {
               <a className={styles.footer__socialTitle} target='_blank' rel='noopener noreferrer' href={'https://www.facebook.com/nick.bevers.9/'}><p>Facebook</p></a>
             </div>
           </div>
+          <hr className={styles.mobile} />
         </div>
 
         <div className={styles.footer__navigation}>
-          <p className={`${styles.footer__title} ${styles.footer__title_navigation}`}>Navigation</p>
+          <p className={`${styles.footer__title} ${styles.footer__navigationTitle}`}>Navigation</p>
           <div className={styles.footer__navigationLinks}>
             {links.map(({ href, label }) => (
               <Link
