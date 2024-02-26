@@ -10,7 +10,7 @@
   font-size: var(--fontSize--h5);
   font-weight: var(--fontWeight--regular);
   color: var(--black--primary);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .technologies__container {
   width: 100%;
@@ -33,9 +33,10 @@
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
   .technologies__container {
     grid-template-columns: repeat(5, 1fr);
+    row-gap: 4rem;
   }
 }
 
