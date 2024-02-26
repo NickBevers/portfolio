@@ -44,15 +44,20 @@
   transition: color 0.5s linear;
 }
 
-.cta__icon {
+.cta__icon, .cta__mobileIcon {
   background-color: var(--yellow--primary);
+  font-size: 1.5rem;
   color: var(--black--primary);
   border-radius: 50%;
-  width: 1.5rem;
-  height: 1.25rem;
-  padding: 0.875rem 0.75rem;
-  box-sizing: content-box;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
   transition: background-color 0.5s linear;
+}
+
+.cta__mobileIcon{
+  background-color: transparent;
 }
 
 .cta__container:hover>.cta__icon {
@@ -63,27 +68,41 @@
   color: var(--blue--secondary);
 }
 
-@media only screen and (max-width: 1300px) {
-  .project__container {
-    padding: 12.25rem 5.5rem;
+.cta__mobileContainer{
+  display: none;
+}
+
+@media only screen and (max-width: 1920px) {
+  .projectCards__container {
+    flex-wrap: wrap;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1500px) {
   .project__container {
     padding: 10.5rem 5.5rem;
     align-items: center;
   }
+}
 
+@media only screen and (max-width: 1350px) {
+  .project__container {
+    padding: 12.25rem 5.5rem;
+  }
+
+  .cta__text {
+    font-size: var(--fontSize--h4);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
   .projectCards__container {
     flex-wrap: wrap;
-    /* flex-direction: column;
-        align-items: center; */
   }
 
   .cta__container {
-    align-self: center;
-    width: clamp(20rem, 80%, 30rem);
+    width: fit-content;
+    gap: 2rem;
   }
 
   .cta__text {
@@ -91,9 +110,11 @@
   }
 
   .cta__icon {
-    width: 1rem;
-    height: 0.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
   }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -116,24 +137,36 @@
     font-size: var(--fontSize--h3);
   }
 
+  .cta__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0.4rem;
+  }
+
   .cta__text {
     font-size: var(--fontSize--large);
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .cta__text {
-    font-size: var(--fontSize--medium);
-  }
-
   .cta__icon {
-    width: 1.2rem;
-    height: 1rem;
-    padding: 0.6rem 0.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 0.4rem;
   }
 
   .selectedWorks__title {
     font-size: var(--fontSize--h4);
     margin-bottom: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0rem var(--blue--secondary);
+  }
+
+  100% {
+    box-shadow: 0 0 2rem 3rem var(--blue--tertiary-alpha);
   }
 }

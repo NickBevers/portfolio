@@ -5,7 +5,7 @@ import projects from '../../../assets/projects.json';
 import ProjectCard from '@/app/projects/_components/projectCard/page';
 
 // limit to 3 projects
-const projectToLoop = [projects["2023"][0], projects["2023"][3],  projects["2022"][0]]
+const projectToLoop = [projects["2023"][0], projects["2023"][3],  projects["2022"][0], projects["2023"][2]]
 
 export default function SelectedWorks() {
   return (
@@ -21,7 +21,7 @@ export default function SelectedWorks() {
 
 
         <Link href={'/projects'} className={styles.cta__container}>
-          <p className={styles.cta__text}>Want to check out more?</p>
+          <p className={styles.cta__text}>Check out more?</p>
           <FaArrowRightLong className={styles.cta__icon} />
         </Link>
       </div>

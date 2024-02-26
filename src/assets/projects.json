@@ -144,8 +144,8 @@
   ],
   "2022": [
     {
-      "name": "Donuttello configurator",
-      "slug": "donuttello-configurator",
+      "name": "Donut configurator",
+      "slug": "donut-configurator",
       "teaser": "Create your own donut",
       "description": "A place where people can create their own donut virtually and maybe even share it with others. That was the target goal for this application. A 3D vibe was added for a bigger 'wow' effect for the users.",
       "thumbnail": "/images/projects/2022/donuttello/thumbnail.webp",

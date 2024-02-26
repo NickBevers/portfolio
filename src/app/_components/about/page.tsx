@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 export default function aboutSection() {
   return (
-    <section className={styles.contactSection}>
+    <section className={styles.about__container}>
       <h2 className={styles.about__title}>About</h2>
       <div className={styles.about__text}>
         <p className={styles.description}>
