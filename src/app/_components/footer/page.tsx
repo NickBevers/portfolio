@@ -73,7 +73,7 @@ export default function Footer() {
               <a className={styles.footer__socialTitle} target='_blank' rel='noopener noreferrer' href={'https://www.facebook.com/nick.bevers.9/'}><p>Facebook</p></a>
             </div>
           </div>
-          <hr className={styles.mobile} />
+          {/* <hr className={styles.mobile} /> */}
         </div>
 
         <div className={styles.footer__navigation}>

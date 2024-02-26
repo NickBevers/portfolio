@@ -131,6 +131,10 @@
   display: none;
 }
 
+.footer__mobileBreak{
+  display: none;
+}
+
 @media only screen and (max-width: 1550px) {
   .footer__content {
     padding: 4.25rem 5.5rem 2rem 5.5rem;
@@ -169,10 +173,6 @@
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
-  }
-
-  .footer__mobileBreak{
-    display: none;
   }
 
   .footer__SocialContainer {
@@ -223,17 +223,19 @@
   .footer__contactData {
     margin-bottom: 1rem;
   }
+
+  .footer__socials {
+    margin-top: 0;
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
   .footer__content {
     justify-content: center;
-    padding: 2rem 3.5rem;
+    padding: 2rem;
   }
 
   .footer__brand {
-    width: 100%;
-    text-align: center;
     margin-bottom: 1rem;
   }
 
@@ -279,9 +281,5 @@
 
   .footer__contactField {
     margin-left: 0.4rem;
-  }
-
-  .footer__socials {
-    margin-top: 2rem;
   }
 }

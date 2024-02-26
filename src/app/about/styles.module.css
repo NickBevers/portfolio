@@ -217,12 +217,20 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .about__intro{
+    min-height: 650px;
+  }
+
   .about__introContent {
     padding: 0 1.5rem;
   }
 
   .about__title {
     font-size: var(--fontSize--h4);
+  }
+
+  .about__cta {
+    margin-bottom: 1rem;
   }
 
   .about__cta__text {
