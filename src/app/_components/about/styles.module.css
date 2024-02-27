@@ -20,7 +20,7 @@
   width: clamp(20rem, 85%, 35rem);
 }
 
-.description {
+.about__description {
   margin-bottom: 2rem;
   line-height: 1.25;
 }

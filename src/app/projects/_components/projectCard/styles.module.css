@@ -42,8 +42,6 @@
 
 .projectCard__icon {
   color: var(--blue--primary);
-  width: 1.5rem;
-  height: 1.5rem;
   transition: color 0.3s ease-in-out;
 }
 
@@ -95,5 +93,10 @@
 
   .projectCard__description {
     font-size: var(--fontSize--subText);
+  }
+
+  .projectCard__icon{
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }

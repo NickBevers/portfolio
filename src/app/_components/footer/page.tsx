@@ -32,8 +32,6 @@ export default function Footer() {
       <div className={styles.footer__content}>
         <div className={styles.footer__socials}>
           <p className={styles.footer__brand}>Nick Bevers</p>
-          {/* <p className={`${styles.footer__title} ${styles.footer__title_socials}`}>Socials</p> */}
-
           <div className={styles.footer__SocialContainer}>
             <div className={styles.footer__socialItems}>
               <a href="https://github.com/NickBevers/" target="_blank" rel="noopener noreferrer">
@@ -73,7 +71,6 @@ export default function Footer() {
               <a className={styles.footer__socialTitle} target='_blank' rel='noopener noreferrer' href={'https://www.facebook.com/nick.bevers.9/'}><p>Facebook</p></a>
             </div>
           </div>
-          {/* <hr className={styles.mobile} /> */}
         </div>
 
         <div className={styles.footer__navigation}>
@@ -81,7 +78,7 @@ export default function Footer() {
           <div className={styles.footer__navigationLinks}>
             {links.map(({ href, label }) => (
               <Link
-                key={`${href}${label}`}
+                key={`${href}.${label}`}
                 href={href}
                 className={`${isActiveLink(href, pathName)}`}>
                 {label}

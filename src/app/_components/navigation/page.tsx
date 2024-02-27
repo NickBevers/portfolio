@@ -2,7 +2,6 @@
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MdMenu } from "react-icons/md";
 
 const links = [
   { href: "/", label: "Home" },
@@ -39,6 +38,12 @@ const toggleMenu = () => {
   if (!menu || !links) return;
   menu.classList.toggle(`${styles.navigation_active}`);
   links.classList.toggle(`${styles.navigation__links_active}`);
+
+  if (menu.classList.contains(`${styles.navigation_active}`)) {
+    document.body.parentElement!.style.overflow = 'hidden';
+  } else {
+    document.body.parentElement!.style.overflow = 'auto';
+  }
 }
 
 export default function Navigation({ style }: { style: string } = { style: '' }) {
@@ -48,7 +53,7 @@ export default function Navigation({ style }: { style: string } = { style: '' })
     <nav className={`${styles.navigation} ${getStyle(style)}`}>
       <div className={styles.navigation__contentContainer}>
         <Link href={'/'} className={`${styles.navigation__brand} ${style}`}>Nick Bevers</Link>
-        <MdMenu id="menuIcon" className={styles.navigation__mobileIcon} onClick={() => { toggleMenu() }} />
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentcolor" id="menuIcon" className={styles.navigation__mobileIcon} onClick={() => { toggleMenu() }} viewBox="0 0 256 256"><path d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z"></path></svg>
         <div className={styles.navigation__links}>
           {links.map(({ href, label }) => (
             <Link
