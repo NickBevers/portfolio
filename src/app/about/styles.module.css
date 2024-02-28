@@ -246,7 +246,7 @@
   .about__introImage {
     width: clamp(180px, 40vw, 220px);
     left: calc(50% - 100px);
-    top: 6.25rem;
+    top: 6.75rem;
   }
 }
 
