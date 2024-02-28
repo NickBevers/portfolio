@@ -1,6 +1,7 @@
 "use client";
 import styles from "./styles.module.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 const links = [
@@ -32,22 +33,36 @@ function getStyle(style: string = '') {
   }
 }
 
-const toggleMenu = () => {
-  const menu = document.querySelector(`.${styles.navigation}`);
-  const links = document.querySelector(`.${styles.navigation__links}`);
-  if (!menu || !links) return;
-  menu.classList.toggle(`${styles.navigation_active}`);
-  links.classList.toggle(`${styles.navigation__links_active}`);
-
-  if (menu.classList.contains(`${styles.navigation_active}`)) {
-    document.body.parentElement!.style.overflow = 'hidden';
-  } else {
-    document.body.parentElement!.style.overflow = 'auto';
-  }
-}
-
 export default function Navigation({ style }: { style: string } = { style: '' }) {
   const pathName = usePathname();
+  const router = useRouter();
+
+
+  const toggleMenu = () => {
+    const menu = document.querySelector(`.${styles.navigation}`);
+    const links = document.querySelector(`.${styles.navigation__links}`);
+    if (!menu || !links) return;
+    menu.classList.toggle(`${styles.navigation_active}`);
+    links.classList.toggle(`${styles.navigation__links_active}`);
+
+    if (menu.classList.contains(`${styles.navigation_active}`)) {
+      document.body.parentElement!.style.overflow = 'hidden';
+    } else {
+      document.body.parentElement!.style.overflow = 'auto';
+    }
+  }
+
+  const toggleScroll = () => {
+    const menu = document.querySelector(`.${styles.navigation}`);
+    if (!menu) return;
+    document.body.parentElement!.style.overflow = 'auto';
+  }
+
+  const handleRedirect = (href: string) => {
+    toggleScroll();
+    router.push(href);
+  }
+
 
   return (
     <nav className={`${styles.navigation} ${getStyle(style)}`}>
@@ -59,6 +74,10 @@ export default function Navigation({ style }: { style: string } = { style: '' })
             <Link
               key={`${href}${label}`}
               href={href}
+              onClick={(e) => {
+                e.preventDefault();
+                handleRedirect(href);
+              }}
               className={`${isActiveLink(href, pathName)} ${style}`}>
               {label}
             </Link>
