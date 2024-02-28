@@ -35,6 +35,7 @@
   position: relative;
 }
 
+/*
 .carousel__overlay{
   position: absolute;
   top: 0;
@@ -43,6 +44,7 @@
   z-index: 3;
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 6%, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 94%, rgba(255,255,255,1) 100%);
 }
+*/
 
 
 .project__carousel_image {
