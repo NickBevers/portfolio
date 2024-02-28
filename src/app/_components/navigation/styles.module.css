@@ -120,9 +120,21 @@
   color: var(--black--primary);
 }
 
+@media screen and (max-width: 1500px) {
+  .navigation__contentContainer {
+    padding: 0 6.5rem;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .navigation__contentContainer {
-    padding: 0 4rem;
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .navigation__links{
+    gap: 2rem;
   }
 }
 
@@ -144,7 +156,6 @@
     background-color: var(--white--primary);
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
     z-index: 150;
     transform: translateX(-100%);
     transition: transform 0.6s ease-in-out;

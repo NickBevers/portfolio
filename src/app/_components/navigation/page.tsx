@@ -55,7 +55,7 @@ export default function Navigation({ style }: { style: string } = { style: '' })
   const toggleScroll = () => {
     const menu = document.querySelector(`.${styles.navigation}`);
     if (!menu) return;
-    document.body.parentElement!.style.overflow = 'auto';
+    document.body.parentElement!.style.overflowY = 'hidden auto';
   }
 
   const handleRedirect = (href: string) => {

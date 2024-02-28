@@ -212,7 +212,7 @@
   .about__introImage {
     width: clamp(280px, 40vw, 300px);
     left: calc(50% - 140px);
-    top: 12vh;
+    top: 6.25rem;
   }
 }
 
@@ -246,9 +246,9 @@
 
 @media only screen and (max-width: 400px) {
   .about__introImage {
-    width: clamp(200px, 40vw, 220px);
+    width: clamp(180px, 40vw, 220px);
     left: calc(50% - 100px);
-    top: 18vh;
+    top: 6.25rem;
   }
 }
 

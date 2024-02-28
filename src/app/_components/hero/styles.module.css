@@ -15,7 +15,7 @@
 .overlay {
   position: absolute;
   width: calc(100% + 1rem);
-  height: 100%;
+  height: max(100vh, 100%);
   margin-left: -1rem;
   background-color: var(--black--secondary);
   opacity: 0.3;
