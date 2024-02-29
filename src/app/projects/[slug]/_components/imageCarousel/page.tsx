@@ -22,7 +22,7 @@ export default function ImageCarousel({name, images}: {name: string, images: Arr
                 <div className={`${styles.project__carousel} embla__container`}>
                     {images.map((image: string, index: number) => (
                         <div key={index} className={`${styles.project__carousel_imageContainer} embla__slide`}>
-                            <Image className={styles.project__carousel_image} src={image} alt={`${name} - image ${index}`} width={0} height={0} sizes='100%' />
+                            <Image priority className={styles.project__carousel_image} src={image} alt={`${name} - image ${index}`} width={0} height={0} sizes='100%' />
                         </div>
                     ))}
                 </div>

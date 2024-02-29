@@ -131,7 +131,7 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
   .about__introContent {
     padding: 0 5rem;
   }
@@ -210,9 +210,9 @@
   }
 
   .about__introImage {
-    width: clamp(280px, 40vw, 300px);
-    left: calc(50% - 140px);
-    top: 6.25rem;
+    width: clamp(180px, 40vw, 200px);
+    left: calc(50% - 100px);
+    top: 8.25rem;
   }
 }
 

@@ -129,3 +129,9 @@
     margin-left: 0;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .carousel__controls {
+    padding: 0 1rem;
+  }
+}

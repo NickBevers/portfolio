@@ -16,7 +16,6 @@ export default function Project() {
   return (
     <div className={styles.project__container}>
       <div className={styles.project__coverImage_container}>
-        <Head><link rel="preload" href={currentProject.cover} as="image" /></Head>
         <Image priority={true} className={styles.project__coverImage} src={currentProject.cover} alt={`${currentProject.title} - cover image`} width={0} height={0} sizes='100%' />
       </div>
 

@@ -173,6 +173,7 @@
     justify-content: center;
     flex-direction: row;
     height: fit-content;
+    margin-left: 0.5rem;
   }
 
   .footer__socialTitle{
