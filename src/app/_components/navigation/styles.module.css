@@ -163,6 +163,11 @@
 
   .navigation__links_active {
     transform: translateX(0);
+    position: fixed;
+  }
+
+  .navigation_active{
+    position: fixed;
   }
 
   .navigation_active .navigation__mobileIcon {
