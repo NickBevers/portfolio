@@ -77,6 +77,10 @@
 }
 
 @media only screen and (max-width: 650px) {
+  .projects__accordion {
+    padding-bottom: 3rem;
+  }
+
   .projects__accordion_title {
     font-size: var(--fontSize--h3);
   }
