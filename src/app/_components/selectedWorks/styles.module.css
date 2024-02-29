@@ -7,13 +7,13 @@
   flex-direction: column;
   width: 100%;
   height: fit-content;
+  gap: 3rem;
 }
 
 .selectedWorks__title {
   font-size: var(--fontSize--h2);
   font-weight: var(--fontWeight--light);
   color: var(--black--primary);
-  margin-bottom: 3rem;
 }
 
 .projectCards__container {
@@ -83,10 +83,6 @@
     padding: 10.5rem 5.5rem;
     align-items: center;
   }
-
-  .selectedWorks__title{
-    margin-bottom: 5rem;
-  }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -129,10 +125,6 @@
   .cta__container {
     margin-top: 0;
   }
-
-  .selectedWorks__title{
-    margin-bottom: 3rem;
-  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -164,7 +156,6 @@
 
   .selectedWorks__title {
     font-size: var(--fontSize--h4);
-    margin-bottom: 0;
   }
 }
 

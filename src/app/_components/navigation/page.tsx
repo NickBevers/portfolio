@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles.module.css";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 const links = [
@@ -35,7 +35,7 @@ function getStyle(style: string = '') {
 
 export default function Navigation({ style }: { style: string } = { style: '' }) {
   const pathName = usePathname();
-  const router = useRouter();
+  // const router = useRouter();
 
 
   const toggleMenu = () => {
@@ -44,23 +44,6 @@ export default function Navigation({ style }: { style: string } = { style: '' })
     if (!menu || !links) return;
     menu.classList.toggle(`${styles.navigation_active}`);
     links.classList.toggle(`${styles.navigation__links_active}`);
-
-    if (menu.classList.contains(`${styles.navigation_active}`)) {
-      document.body.parentElement!.style.overflow = 'hidden';
-    } else {
-      document.body.parentElement!.style.overflow = 'auto';
-    }
-  }
-
-  const toggleScroll = () => {
-    const menu = document.querySelector(`.${styles.navigation}`);
-    if (!menu) return;
-    document.body.parentElement!.style.overflowY = 'hidden auto';
-  }
-
-  const handleRedirect = (href: string) => {
-    toggleScroll();
-    router.push(href);
   }
 
 
@@ -74,10 +57,9 @@ export default function Navigation({ style }: { style: string } = { style: '' })
             <Link
               key={`${href}${label}`}
               href={href}
-              onClick={(e) => {
-                e.preventDefault();
-                handleRedirect(href);
-              }}
+              // onClick={() => {
+              //   router.push(href);
+              // }}
               className={`${isActiveLink(href, pathName)} ${style}`}>
               {label}
             </Link>
