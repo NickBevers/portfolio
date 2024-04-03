@@ -15,6 +15,3 @@ In case there are some topics or technologies you think may be interesting or fu
 
 ## Questions
 In case you have any questions, feel free to open an issue on Github or contact me through my website 🙂
-
-## Inquiries 
-Let's work together on your next big (or small) project!
