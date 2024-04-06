@@ -1,4 +1,4 @@
-# Nick portfolio
+# Nick portfolio 👋
 
 ## About my personal corner here on the internet
 Hello and welcome to my little space on the internet. Nice of you to drop by and take a look.
