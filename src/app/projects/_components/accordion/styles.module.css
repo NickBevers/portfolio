@@ -30,7 +30,7 @@
   background-color: var(--white--primary);
   color: var(--black--primary);
   font-size: var(--fontSize--h2);
-  font-family: 'TTHoves-Light';
+  font-family: "Poppins", sans-serif;
   font-weight: var(--fontWeight--light);
   width: 100%;
   height: 100%;
