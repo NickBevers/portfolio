@@ -92,10 +92,3 @@ h3 {
   font-size: var(--fontSize--h3);
   font-weight: var(--fontWeight--regular);
 }
-
-@font-face {
-  font-family: 'TTHoves-Light';
-  src: url('./fonts/TTHoves-Light.woff2') format('woff2'),
-    url('./fonts/TTHoves-Light.woff') format('woff');
-  font-weight: var(--fontWeight--light);
-}

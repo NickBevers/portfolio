@@ -70,7 +70,7 @@
       ]
     },
     {
-      "name": "E-commerce platform",
+      "name": "E-commerce stage",
       "slug": "ecommerce-stage",
       "teaser": "An e-commerce webshop",
       "description": "This fully complete webshop with a PHP back-end and Vue front-end is a place where people can freely create items to sell and where all items can be bought. It's a fully complete webshop for everyone to use.",

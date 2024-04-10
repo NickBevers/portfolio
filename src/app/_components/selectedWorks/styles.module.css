@@ -20,6 +20,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 100%;
   height: fit-content;
   gap: 2rem;
