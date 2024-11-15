@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { ProjectProvider } from "@/context/globalState";
 import { Poppins } from "next/font/google";
-import UnregisterServiceWorker from "./_components/unregisterServiceWorker";
 
 export const metadata: Metadata = {
   title: "Nick Bevers",
@@ -22,7 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ProjectProvider>
           {children}
         </ProjectProvider>
-        <UnregisterServiceWorker />
       </body>
     </html>
   );
