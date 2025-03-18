@@ -90,8 +90,9 @@ export default function Footer() {
         <div className={styles.footer__contact}>
           <p className={styles.footer__title}>Contact me</p>
           <div className={styles.footer__contactFields}>
-            <p className={styles.footer__contactData}>Email. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>hello@nickbevers.be</span></p>
-            <p className={styles.footer__contactData}>Tel. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>+32 477 35 55 32</span></p>
+            <p className={styles.footer__contactData}>Email. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>hello@nickbevers.dev</span></p>
+            <p className={styles.footer__contactData}>Tel. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>+32 456 82 94 05</span></p>
+            <p className={styles.footer__contactData}>VAT. <br className={styles.footer__mobileBreak} /><span className={styles.footer__contactField}>BE1019.819.891</span></p>
           </div>
         </div>
       </div>
@@ -99,7 +100,7 @@ export default function Footer() {
       <hr className={styles.divider} />
 
       <div className={styles.copyright}>
-        <p>&copy;{getCurrentYear()} nickbevers.be | All Rights Reserved</p>
+        <p>&copy;{getCurrentYear()} nickbevers.dev | All Rights Reserved</p>
       </div>
     </footer>
   );

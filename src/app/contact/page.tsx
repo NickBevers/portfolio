@@ -18,21 +18,21 @@ export default function ContactPage() {
         </div>
         <div className={styles.bubbleEmail}>
           <div className={styles.center}>
-            <p className={styles.bubbleText}>hello@nickbevers.be</p>
+            <p className={styles.bubbleText}>hello@nickbevers.dev</p>
           </div>
         </div>
         <div className={styles.bubblePhone}>
           <div className={styles.center}>
-            <p className={styles.bubbleText}>+32 477 35 55 32</p>
+            <p className={styles.bubbleText}>+32 456 82 94 05</p>
           </div>
         </div>
 
         <div className={styles.bubbleMobile}>
           <div className={styles.center}>
             <p className={styles.bubbleText}>
-              hello@nickbevers.be
+              hello@nickbevers.dev
               <br />
-              +32 477 35 55 32
+              +32 456 82 94 05
             </p>
           </div>
         </div>

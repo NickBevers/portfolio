@@ -1,8 +1,8 @@
 {
   "2023": [
     {
-      "name": "My Portfolio",
-      "slug": "my-portfolio",
+      "name": "Nick Bevers",
+      "slug": "nick-bevers",
       "teaser": "My personal portfolio",
       "description": "A place for my own on the internet, somewhere I can really express myself and show what I'm capable of. That was what I wanted to create with this portfolio. A place that really feels like me.",
       "thumbnail": "/images/projects/2023/portfolio/thumbnail.webp",
@@ -14,7 +14,7 @@
         "/images/projects/2023/portfolio/4.webp",
         "/images/projects/2023/portfolio/5.webp"
       ],
-      "link": "https://nickbevers.be",
+      "link": "https://nickbevers.dev",
       "skills": [
         "React",
         "NextJS",
